@@ -1,0 +1,2 @@
+* run server in 'server' folder with
+DEBUG=server:* npm start
