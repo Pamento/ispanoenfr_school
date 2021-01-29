@@ -1,23 +1,31 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const favicon = require('serve-favicon');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const {ignoreFavicon} = require('./middleware/ignore-express-favicon');
+
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
 const clientApp = require('./routes/spa');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// prevent default favicon of Express
+app.use(ignoreFavicon);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.get('/favicon.ico', (req, res) => res.status(204));
+app.use(favicon(path.join(__dirname, './public/images/', 'favicon.ico')))
+
 // static file for join with files from 'views' folder
 app.use(express.static(path.join(__dirname, 'public')));
 // static file for client react build to serve at user
