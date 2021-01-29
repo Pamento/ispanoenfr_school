@@ -1,2 +1,17 @@
 * run server in 'server' folder with
 DEBUG=server:* npm start
+
+* react version
+17.0.1
+
+* Colors palet
+#0037B3 blue
+#70BAFF blue light
+#001252 blue marin
+#707070 gray
+#F5F5F5 gray light
+#FC5C4D coral
+#FE0879 purple
+#FED715 yellow
+#FF82E2 violet
+#FFFFFF white
