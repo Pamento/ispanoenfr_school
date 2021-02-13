@@ -8,7 +8,7 @@ const favicon = require('serve-favicon');
 const {ignoreFavicon} = require('./middleware/ignore-express-favicon');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const contactRouter = require('./routes/contact');
 const clientApp = require('./routes/spa');
 
 const app = express();
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use('/', clientApp);
 app.use('/service', indexRouter);
-app.use('/users', usersRouter);
+app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
