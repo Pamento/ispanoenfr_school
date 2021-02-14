@@ -1,10 +1,27 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET users listing. */
-router.get('/message', function(req, res, next) {
-  console.log(req.body)
-  res.send('respond with a resource');
+/* POST contact/message listing. */
+router.post('/message', function (req, res, next) {
+  // req.body:
+  // {
+  //   status: '',
+  //   title: '',
+  //   firstName: 'Pino',
+  //   lastName: 'Opinel',
+  //   email: 'name@eman.com',
+  //   subject: '',
+  //   message: "Bonjour, ...!"
+  // }
+  // next: check if each value is a string and send the email.
+  
+  console.dir(req.body);
+
+
+  // res.status(200);
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({"success": "OK"}));
+  // res.json({success: "OK"});
 });
 
 module.exports = router;

@@ -21,7 +21,7 @@ app.set('view engine', 'jade');
 app.use(ignoreFavicon);
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.get('/favicon.ico', (req, res) => res.status(204));
 app.use(favicon(path.join(__dirname, './public/images/', 'favicon.ico')))
