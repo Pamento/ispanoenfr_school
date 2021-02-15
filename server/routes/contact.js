@@ -20,8 +20,8 @@ router.post('/message', function (req, res, next) {
 
   // res.status(200);
   res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({"success": "OK"}));
-  // res.json({success: "OK"});
+  // res.end(JSON.stringify({"success": "OK"}));
+  res.json({success: OK});
 });
 
 module.exports = router;

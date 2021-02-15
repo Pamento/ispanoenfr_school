@@ -23,13 +23,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.get('/favicon.ico', (req, res) => res.status(204));
-app.use(favicon(path.join(__dirname, './public/images/', 'favicon.ico')))
+// Set for prevent load of express logo, but doeasnt work.
+// app.get('/favicon.ico', (req, res) => res.status(204));
 
 // static file for join with files from 'views' folder
 app.use(express.static(path.join(__dirname, 'public')));
 // static file for client react build to serve at user
 app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use('/', clientApp);
 app.use('/service', indexRouter);
