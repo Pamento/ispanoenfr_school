@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Message For Cocorico-Workshop
+    link(rel="stylesheet", href="/stylesheets/tem-msg.css")
+
+
+block content
+  p
+    span Genre: 
+    | #{tento.status}
+  p 
+    span Prénom: 
+    | #{tento.fName}
+  p 
+    span Nom: 
+    | #{tento.lName}
+  p 
+    span Profil: 
+    | #{tento.title}
+  p 
+    span E-mail: 
+    | #{tento.email}
+
+  br
+
+  span(class='object') Objet:
+  h2= tento.subject
+
+  h4 Message:
+  p(class='oblic')
+    | #{tento.msg}
