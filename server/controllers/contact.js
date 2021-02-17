@@ -15,11 +15,11 @@ exports.sendEmail = (req,res) => {
   // {
   //   status: '',
   //   title: '',
-  //   firstName: 'Pino',
-  //   lastName: 'Opinel',
+  //   fName: 'Pino',
+  //   lName: 'Opinel',
   //   email: 'name@eman.com',
   //   subject: '',
-  //   message: "Bonjour, ...!"
+  //   msg: "Bonjour, ...!"
   // }
   // next: check if each value is a string and send the email.
   

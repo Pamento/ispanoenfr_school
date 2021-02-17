@@ -22,6 +22,11 @@ app.set('view engine', 'jade');
 // prevent default favicon of Express
 app.use(ignoreFavicon);
 app.use(cors());
+// app.use((req,res,next) => {
+//   res.setHeader('Access-Control-Allow-Origin','http://localhost:3000/');
+//   res.setHeader('Access-Control-Allow-Methods','POST','GET');
+//   res.setHeader('Access-Control-Request-Headers', 'Content-Type');
+// })
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
