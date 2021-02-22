@@ -1,0 +1,183 @@
+.box-testimony-link {
+  max-width: 33.33%;
+  min-height: 520px;
+  display: flex;
+  flex-grow: 1;
+  z-index: 2;
+  color: var(--White);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.box-testimony-link a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  line-height: var(--size-fourfold);
+  font-size: var(--size-medium);
+  word-spacing: 9px;
+}
+
+.testimony-action-p {
+  font-size: var(--size-double);
+}
+
+.btn-testimony-speecker {
+  width: var(--size-g);
+  height: var(--size-g);
+  position: absolute;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  /* cursor: pointer; */
+  margin: 32px;
+}
+
+.btn-testimony-speecker > img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-testimony-speecker:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px white;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.speecker-left {
+  top: 0;
+  left: 0;
+}
+
+.speecker-right {
+  top: 0;
+  right: 0;
+}
+
+.testimony-children-box {
+  position: relative;
+  height: 370px;
+  width: auto;
+  flex-grow: 1;
+}
+
+.testimony-children-box > img {
+  width: auto;
+  height: 100%;
+}
+
+.testimony-container {
+  padding: 24px;
+}
+
+.testimony-container-relative {
+  position: relative;
+  width: 47vw;
+  height: 35vh;
+}
+
+.testimony-card {
+  border-radius: 10px;
+  position: absolute;
+  width: 98%;
+}
+
+.card-one {
+  transform: rotate(-7deg);
+  top: -5%;
+  left: 10%;
+}
+
+.card-two {
+  transform: rotate(7deg);
+  top: 20%;
+  left: 1%;
+}
+
+.card-three {
+  transform: rotate(1deg);
+  top: -12%;
+  left: 5%;
+}
+
+.card-fourth {
+  transform: rotate(-6deg);
+  top: 27%;
+  left: 1%;
+  z-index: 33;
+}
+
+.card-fifth {
+  transform: rotate(5deg);
+  top: -5%;
+  left: 9%;
+}
+
+.card-six {
+  transform: rotate(3deg);
+  top: 32%;
+  left: 3%;
+}
+
+.testimony-card-blue {
+  background-image: linear-gradient(to right, #ffffff, #0037B3);
+}
+.testimony-card-pink {
+  background-image: linear-gradient(to right, #ffffff, #FE0879);
+}
+.testimony-card-yellow {
+  background-image: linear-gradient(to right, #ffffff, #FED715);
+}
+.testimony-card-blueLight {
+  background-image: linear-gradient(to right, #ffffff, #70BAFF);
+}
+.testimony-card-pinkLight {
+  background-image: linear-gradient(to right, #ffffff, #FF82E2);
+}
+.testimony-image {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background: white;
+  margin: 32px 0 32px 32px;
+}
+
+.testimony-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.textimony-span {
+  font-size: var(--size-medium);
+}
+
+.testimony-text-p {
+  display: block;
+  margin: 0;
+  padding: var(--size-medium) var(--size-triple);
+  text-align: left;
+  color: var(--White);
+}
+
+#op-isabelle_d {
+  background-image: url('../assets/media/isabelle_dremeau.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+#op-valerie {
+  background-image: url('../assets/media/valerie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
