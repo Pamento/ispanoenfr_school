@@ -5,31 +5,43 @@ import DAY from '../Day';
 
 export default function WeekSchedule() {
   const { t } = useTranslation();
+  const sBold = t('home.typical.day-span');
+
   return (
     <div className="WeekContainer">
       <DAY
         title={t('home.typical.day-1')}
-        message={t('home.typical.day-1-description')}
+        message1={t('home.typical.day-1-description-p1')}
+        spanBold={sBold}
+        message2={t('home.typical.day-1-description-p2')}
         color="pink"
       />
       <DAY
         title={t('home.typical.day-2')}
-        message={t('home.typical.day-2-description')}
+        message1={t('home.typical.day-2-description-p1')}
+        spanBold={sBold}
+        message2={t('home.typical.day-2-description-p2')}
         color="pinkLight"
       />
       <DAY
         title={t('home.typical.day-3')}
-        message={t('home.typical.day-3-description')}
+        message1={t('home.typical.day-3-description-p1')}
+        spanBold={sBold}
+        message2={t('home.typical.day-3-description-p2')}
         color="yellow"
       />
       <DAY
         title={t('home.typical.day-4')}
-        message={t('home.typical.day-4-description')}
+        message1={t('home.typical.day-4-description-p1')}
+        spanBold={sBold}
+        message2={t('home.typical.day-4-description-p2')}
         color="blueLight"
       />
       <DAY
         title={t('home.typical.day-5')}
-        message={t('home.typical.day-5-description')}
+        message1={t('home.typical.day-5-description-p1')}
+        spanBold={sBold}
+        message2={t('home.typical.day-5-description-p2')}
         color="blueNavy"
       />
     </div>

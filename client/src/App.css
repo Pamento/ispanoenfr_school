@@ -117,6 +117,10 @@ img {
   align-items: center;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 /* --------------------- HEADER -------------------- */
 .header {
   width: 100%;
@@ -306,6 +310,13 @@ img {
   color: var(--White);
   padding: 0 10%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-day > p {
+  margin: 4px;
+  text-align: center;
 }
 
 .box-image-text {
@@ -355,11 +366,8 @@ img {
   align-items: center;
 }
 
-.box-text-p {
-  display: block;
-  margin: 0;
-  padding: var(--size-normal) var(--size-medium) var(--size-normal) var(--size-g);
-  text-align: left;
+.box-text > div {
+  padding: 0 5em;
 }
 
 .p-size-one-three {

@@ -85,8 +85,9 @@ const Home = () => {
               <div>
                 <p className="box-text-single-p p-size-medium">{t('home.concept-text1')}</p>
                 <p className="box-text-single-p p-size-medium">{t('home.concept-text2')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text3')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text4')}</p>
+                <br />
+                <p className="box-text-single-p p-size-one-three">{t('home.concept-text3')}</p>
+                <p className="box-text-single-p p-size-one-three">{t('home.concept-text4')}</p>
               </div>
             </ImageAndText>
 
@@ -132,7 +133,7 @@ const Home = () => {
               imageSrc={ImgPedagogical}
             >
               <div>
-                <h3>{t('home.pedagogical-subtitle1')}</h3>
+                <h2 className="h2-title" >{t('home.pedagogical-subtitle1')}</h2>
                 <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p1')}</p>
                 <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p2')}</p>
                 <br />
@@ -145,7 +146,8 @@ const Home = () => {
                   <li>{t('home.pedagogical-list1-p6')}</li>
                 </ul>
                 <br />
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-list2-p1')}</p>
+                <h2 className="h2-title" >{t('home.pedagogical-list2-p1')}</h2>
+                {/* <p className="box-text-single-p p-size-medium">{t('home.pedagogical-list2-p1')}</p> */}
                 <ul className="home-list-ul">
                   <li>{t('home.pedagogical-list2-p2')}</li>
                   <li>{t('home.pedagogical-list2-p3')}</li>
@@ -156,7 +158,9 @@ const Home = () => {
                   <li>{t('home.pedagogical-list2-p8')}</li>
                   <li>{t('home.pedagogical-list2-p9')}</li>
                 </ul>
-                <h3>{t('home.pedagogical-subtitle2')}</h3>
+                <br />
+                <h2 className="h2-title" >{t('home.pedagogical-subtitle2')}</h2>
+                {/* <p className="box-text-single-p p-size-medium">{t('home.pedagogical-subtitle2')}</p> */}
                 <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p1')}</p>
                 <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p2')}</p>
               </div>
