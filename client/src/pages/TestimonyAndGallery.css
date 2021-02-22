@@ -33,7 +33,6 @@
   background: transparent;
   margin: 0;
   padding: 0;
-  /* cursor: pointer; */
   margin: 32px;
 }
 
@@ -62,7 +61,7 @@
 
 .testimony-children-box {
   position: relative;
-  height: 370px;
+  height: 365px;
   width: auto;
   flex-grow: 1;
 }

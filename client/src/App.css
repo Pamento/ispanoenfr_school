@@ -117,20 +117,17 @@ img {
   align-items: center;
 }
 
-/* ------------------------------------------------- ||
-|| --------------------- HEADER -------------------- ||
-|| ------------------------------------------------- */
+/* --------------------- HEADER -------------------- */
 .header {
   width: 100%;
   background-color: var(--White);
 }
 
 .logo {
-  width: 450px;
+  width: 26%;
   height: auto;
   margin: 24px auto 0;
 }
-
 
 /* ----------------- MENU NAVIGATION --------------- */
 
@@ -260,9 +257,7 @@ img {
   margin-top: var(--size-normal);
 }
 
-/* ------------------------------------------------- ||
-|| --------------------- BANNER -------------------- ||
-|| ------------------------------------------------- */
+/* --------------------- BANNER -------------------- */
 .box-banner {
   width: 100%;
 }
@@ -392,9 +387,7 @@ img {
   cursor: pointer;
 }
 
-/* ------------------------------------------------- ||
-|| --------------------- FOOTER -------------------- ||
-|| ------------------------------------------------- */
+/* --------------------- FOOTER -------------------- */
 
 .footer {
   position: relative;
@@ -404,7 +397,7 @@ img {
   flex-direction: row;
   padding: 0 var(--size-fourfold);
   margin: var(--size-fourfold) 0 0;
-  /* font-size: 14px; */
+  box-shadow: 0 5px 8px -1px black;
 }
 
 .footer-box-logo {
@@ -448,4 +441,18 @@ img {
 }
 .btn-legacy:hover {
   color: var(--coral);
+}
+
+.home-author {
+  font-size: var(--size-normal);
+  color: var(--gray);
+  font-weight: 300;
+  margin: 4px 2em;
+  text-align: left;
+}
+
+.home-author > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
 }
