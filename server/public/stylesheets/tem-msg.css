@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+span {
+  color: rgb(64, 64, 64);
+  font-weight: normal;
+}
+
+p {
+  margin: 4px;
+  font-weight: 900;
+}
+
+.object {
+  border-bottom: 1px solid black;
+}
+
+.oblic {
+  font-style: oblique;
+  font-weight: normal;
+}

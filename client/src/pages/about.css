@@ -1,0 +1,67 @@
+.box-about-humans {
+  width: 100%;
+  color: var(--White);
+}
+
+.box-humans {
+  padding: var(--size-double) var(--size-fourfold);
+}
+
+.box-single-human {
+  max-width: 80%;
+  padding: var(--size-triple) var(--size-double);
+  display: inline-flex;
+}
+
+.box-all-support {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.box-support {
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1;
+}
+
+.box-stretch-horisontal {
+  flex-grow: 1;
+  padding: 0 var(--size-double);
+}
+
+.box-human-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.box-img {
+  background: var(--White);
+  padding: var(--size-big);
+  border-radius: 50%;
+}
+
+.box-img > img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+}
+
+.support-label {
+  padding: var(--size-fourfold);
+  font-size: var(--size-double);
+  word-spacing: 8px;
+}
+
+#pawel {
+  background-image: url('../assets/media/pawel.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}

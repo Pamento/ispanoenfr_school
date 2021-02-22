@@ -1,0 +1,29 @@
+.home-list-ul {
+  font-size: 1.5em;
+  margin: 0 2.5em;
+  text-align: left;
+}
+
+.home-list-ul > li {
+  margin: 4px 0;
+}
+
+.box-text-single-p {
+  margin: 4px 3em;
+  text-align: left;
+}
+
+.home-box-descr {
+  padding-bottom: var(--size-double);
+}
+
+.home-box-descr > p {
+  margin: .2em;
+}
+
+.box-contect-image > img {
+  max-height: 420px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}

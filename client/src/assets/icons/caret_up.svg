@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="56"
+   height="56"
+   viewBox="0 0 14.816666 14.816667"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="caret_up.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.2127234"
+     inkscape:cx="28.599731"
+     inkscape:cy="49.688646"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1874"
+     inkscape:window-height="1016"
+     inkscape:window-x="46"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect833"
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.264583"
+       d="m 0.6971106,3.934644 c -0.105694,0.0014 -0.211059,0.04348 -0.290938,0.125574 -0.159758,0.164196 -0.155928,0.424702 0.0083,0.58446 l 6.6336716,6.454903 c 0.1443045,0.140413 0.3635946,0.154509 0.5229653,0.04444 0.048123,-0.01898 0.093909,-0.04683 0.1338421,-0.08475 L 14.417204,4.685502 c 0.166121,-0.157751 0.172737,-0.418335 0.01499,-0.58446 -0.157752,-0.166125 -0.418852,-0.173255 -0.584977,-0.0155 L 7.3587195,10.247953 0.9911496,4.05195 C 0.9090496,3.97207 0.8028056,3.933196 0.6971106,3.934644 Z"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
