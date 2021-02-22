@@ -17,7 +17,6 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-  line-height: var(--size-fourfold);
   font-size: var(--size-medium);
   word-spacing: 9px;
 }
@@ -133,7 +132,7 @@
   background-image: linear-gradient(to right, #ffffff, #FE0879);
 }
 .testimony-card-yellow {
-  background-image: linear-gradient(to right, #ffffff, #FED715);
+  background-image: linear-gradient(to right, #ffffff, #FED715 50%);
 }
 .testimony-card-blueLight {
   background-image: linear-gradient(to right, #ffffff, #70BAFF);
@@ -166,18 +165,24 @@
   color: var(--White);
 }
 
-#op-isabelle_d {
-  background-image: url('../assets/media/isabelle_dremeau.jpg');
+.op-testymony-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
 }
 
+#op-isabelle_d {
+  background-image: url('../assets/media/isabelle_dremeau.jpg');
+
+}
+
 #op-valerie {
   background-image: url('../assets/media/valerie.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
+
+}
+
+#op-christian {
+  background-image: url('../assets/media/Christian_Pitter.jpeg');
+
 }
