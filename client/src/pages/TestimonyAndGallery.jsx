@@ -18,7 +18,7 @@ import ChildThree from "../assets/media/action_fille_lunette.png";
 import ChildFour from "../assets/media/action_garcon_coquin.png";
 import ChildFive from '../assets/media/action_fille_asiatique.png';
 // import ManGlass from "../assets/icons/man_glass.png";
-import WomanGlass from "../assets/icons/woman_glass.png";
+//import WomanGlass from "../assets/icons/woman_glass.png";
 // import Man from "../assets/icons/man.png";
 // import Valerie from "../assets/media/valerie.jpg";
 // import Woman from "../assets/icons/woman.png";
@@ -173,7 +173,7 @@ const TestimonyAndGallery = () => {
               <ImageAndText
                 idBoxImg="op-isabelle_d"
                 allClass="row testimony-card testimony-card-blue card-one"
-                imgClass="testimony-image"
+                imgClass="op-testymony-image testimony-image"
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
@@ -183,9 +183,9 @@ const TestimonyAndGallery = () => {
             </div>
             <div className="testimony-container-relative">
               <ImageAndText
-                idBoxImg="op-valerie"
+                idBoxImg="op-christian"
                 allClass="row testimony-card testimony-card-pink card-two"
-                imgClass="testimony-image"
+                imgClass="op-testymony-image testimony-image"
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
@@ -193,19 +193,18 @@ const TestimonyAndGallery = () => {
                   {t('testimony-gallery.opinions.second-text')}</p>
               </ImageAndText>
             </div>
-            {/* <div className="testimony-container-relative">
+            <div className="testimony-container-relative">
               <ImageAndText
+              idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-yellow card-three"
-                imgClass="testimony-image"
-                imageSrc={Man}
-                imageDescript={t('home.practical.age-picto-alt')}
+                imgClass="op-testymony-image testimony-image"
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
                   <span className="textimony-span">{t('testimony-gallery.opinions.third-title')}<br /></span>
                   {t('testimony-gallery.opinions.third-text')}</p>
               </ImageAndText>
-            </div> */}
+            </div>
             {/* <div className="testimony-container-relative">
               <ImageAndText
                 allClass="row testimony-card testimony-card-blueLight card-fourth"
