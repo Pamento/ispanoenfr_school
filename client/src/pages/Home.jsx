@@ -43,18 +43,18 @@ const Home = () => {
   }
   const executeScroll = (r) => r.scrollIntoView();
   useEffect(() => {
-  if (loaded === '' || loaded !== window.location.hash) {
-    if (window.location.hash === undefined || window.location.hash === null || window.location.hash === '' || window.location.hash === '#top') {
-      scrollToTop();
-      setLoaded(window.location.hash);
-    } else {
-      const getRef = aboutRef.find(e => e.hashtag === window.location.hash);
-      executeScroll(getRef.referance.current);
+    if (loaded === '' || loaded !== window.location.hash) {
+      if (window.location.hash === undefined || window.location.hash === null || window.location.hash === '' || window.location.hash === '#top') {
+        scrollToTop();
+        setLoaded(window.location.hash);
+      } else {
+        const getRef = aboutRef.find(e => e.hashtag === window.location.hash);
+        executeScroll(getRef.referance.current);
+        setLoaded(window.location.hash);
+      }
       setLoaded(window.location.hash);
     }
-    setLoaded(window.location.hash);
-  }
-},[loaded,aboutRef]);
+  }, [loaded, aboutRef]);
 
   return (
     <div className="main">
@@ -70,9 +70,9 @@ const Home = () => {
             hoveredFacebookIcon={FacebookCoral} />
         </div>
         <div className="container">
+
           <div className="section">
             <div ref={conceptRef} >
-
               <SubTitle hashHref="#concept" subtitleClass="subtitle" subtitle={t('home.concept')} onElementClic={scrollToTop} />
             </div>
             <ImageAndText
@@ -83,11 +83,11 @@ const Home = () => {
               imageSrc={ImgConcept}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text2')}</p>
+                <p className="box-text-single-p p-size-m text-bold p-text-coral">{t('home.concept-text1')}</p>
+                <p className="box-text-single-p p-size-m text-bold p-text-coral">{t('home.concept-text2')}</p>
                 <br />
-                <p className="box-text-single-p p-size-one-three">{t('home.concept-text3')}</p>
-                <p className="box-text-single-p p-size-one-three">{t('home.concept-text4')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.concept-text3')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.concept-text4')}</p>
               </div>
             </ImageAndText>
 
@@ -100,8 +100,8 @@ const Home = () => {
               imageSrc={ImgEnvironment}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('home.spotlight-text-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.spotlight-text-p2')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.spotlight-text-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.spotlight-text-p2')}</p>
               </div>
             </ImageAndText>
 
@@ -134,8 +134,8 @@ const Home = () => {
             >
               <div>
                 <h2 className="h2-title" >{t('home.pedagogical-subtitle1')}</h2>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p2')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-text-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-text-p2')}</p>
                 <br />
                 <ul className="home-list-ul">
                   <li>{t('home.pedagogical-list1-p1')}</li>
@@ -147,7 +147,7 @@ const Home = () => {
                 </ul>
                 <br />
                 <h2 className="h2-title" >{t('home.pedagogical-list2-p1')}</h2>
-                {/* <p className="box-text-single-p p-size-medium">{t('home.pedagogical-list2-p1')}</p> */}
+                {/* <p className="box-text-single-p p-size-m">{t('home.pedagogical-list2-p1')}</p> */}
                 <ul className="home-list-ul">
                   <li>{t('home.pedagogical-list2-p2')}</li>
                   <li>{t('home.pedagogical-list2-p3')}</li>
@@ -160,16 +160,16 @@ const Home = () => {
                 </ul>
                 <br />
                 <h2 className="h2-title" >{t('home.pedagogical-subtitle2')}</h2>
-                {/* <p className="box-text-single-p p-size-medium">{t('home.pedagogical-subtitle2')}</p> */}
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p2')}</p>
+                {/* <p className="box-text-single-p p-size-m">{t('home.pedagogical-subtitle2')}</p> */}
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-tools-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-tools-p2')}</p>
               </div>
             </ImageAndText>
             <SubTitle ref={typicalRef} hashHref="#typical" subtitleClass="subtitle" subtitle={t('home.typical.subtitle')} onElementClic={scrollToTop} />
           </div>
           <div className="container-static home-box-descr">
-            <p className="p-size-medium">{t('home.typical.description')}</p>
-            <p className="p-size-medium">{t('home.typical.description-add')}</p>
+            <p className="p-size-m">{t('home.typical.description')}</p>
+            <p className="p-size-m">{t('home.typical.description-add')}</p>
           </div>
           <WeekContainer />
         </div>

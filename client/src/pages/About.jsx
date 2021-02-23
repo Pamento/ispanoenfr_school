@@ -11,7 +11,7 @@ import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
 import ImgBanderole from "../assets/media/about-us_banderole.png";
 import Valerie from "../assets/media/valerie.jpg";
-import Sponsors from "../assets/media/sponsors.jpg";
+import Sponsors from "../assets/icons/sponsor.png";
 import HumansOfCocorico from "../components/containers/HumansOfCocorico";
 
 const About = () => {
@@ -69,9 +69,9 @@ const About = () => {
               imageSrc={Valerie}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about2')}</p>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about3')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about1')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about2')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about3')}</p>
                 {/* <a href="#">{t('about.valerie-about-link')}</a> */}
               </div>
             </ImageAndText>
@@ -87,7 +87,10 @@ const About = () => {
               imgClass="box-image"
               imageSrc={Sponsors}
             >
-              <p className="box-text-p p-size-medium">{t('about.sponsors-text')}</p>
+              <div>
+              <p className="box-text-p p-size-m">{t('about.sponsors-text')}</p>                
+              </div>
+
             </ImageAndText>
           </div>
         </div>
