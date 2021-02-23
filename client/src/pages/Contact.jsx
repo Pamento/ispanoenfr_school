@@ -56,6 +56,7 @@ const validate = values => {
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [loaded, setLoaded] = useState('');
   const [isSubmitting, allowSubmit] = useState('1O');
   const [firstNameError, setFirstNameError] = useState('');
   const [msgIsSend, setMsgSend] = useState(false);
@@ -108,6 +109,10 @@ const Contact = () => {
   }
 
   useEffect(() => {
+    if (loaded === '') {
+      window.scrollTo(0, 0);
+      setLoaded(window.location.hash);
+    }
     console.log('-#- ' + isSubmitting);
     console.error(formik.errors);
     if (formik.submitCount > 5) {
@@ -126,7 +131,7 @@ const Contact = () => {
       }
     }
 
-  }, [isSubmitting, allowSubmit, formik.values.lName, formik.values.email, formik.values.msg,
+  }, [loaded, isSubmitting, allowSubmit, formik.values.lName, formik.values.email, formik.values.msg,
     formik.errors.lName, formik.errors.email, formik.errors.msg, formik.isValid, formik.submitCount, formik.errors]);
 
   const iChange = (e) => {

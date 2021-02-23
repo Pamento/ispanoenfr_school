@@ -74,7 +74,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={WomanGlass}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
               </ImageAndText>
               <ImageAndText
                 allClass="box-single-human container-static"
@@ -83,7 +85,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Man}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
               </ImageAndText>
               <ImageAndText
                 allClass="box-single-human container-static"
@@ -92,7 +96,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Woman}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
               </ImageAndText>
             </div>}
         </>
@@ -108,7 +114,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={ManGlass}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                </div>
               </ImageAndText>
               <ImageAndText
                 allClass="box-single-human container-static"
@@ -117,7 +125,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Woman}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                </div>
               </ImageAndText>
             </div>}
         </>
@@ -134,7 +144,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
               // imageSrc={Pawel}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of.pawel')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.pawel')}</p>
+                </div>
               </ImageAndText>
               {/* <ImageAndText
                 allClass="box-single-human container-static"
@@ -143,7 +155,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Man}
               >
-                <p className="box-text-p p-size-m">{t('about.humans-of')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of')}</p>
+                </div>
               </ImageAndText> */}
             </div>}
         </>

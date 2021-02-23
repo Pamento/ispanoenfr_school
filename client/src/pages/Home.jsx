@@ -1,22 +1,24 @@
 import React, { useState, useEffect, useRef } from "react";
 import './home.css'
 import { useTranslation } from 'react-i18next';
-
-import ImgBanderole from '../assets/media/home_banderole.jpg';
-import ImgEnvironment from "../assets/media/home_workshop.jpg";
-import ImgConcept from "../assets/media/home_concept.jpg";
-import ImgLearning from "../assets/media/home_learning.jpg";
-import ImgPedagogical from "../assets/media/home_pedagogical.jpg";
 import Box from "../components/units/BoxColored";
 import WeekContainer from '../components/containers/WeekSchedule';
 import ImageAndText from '../components/ImageAndText';
 import SubTitle from '../components/SubTitle';
 import HomePracticInformations from "../components/containers/HomePracticInformations";
+import Img from "../components/units/ImagePerform";
 import SocialLinks from "../components/SocialsLinks";
+// img
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
+import ImgBanderole from '../assets/media/b_home.jpg';
+import ImgBanderoleS from '../assets/media/b_home_s.jpg';
+import ImgEnvironment from "../assets/media/h_workshop.jpg";
+import ImgConcept from "../assets/media/h_concept.jpg";
+import ImgLearning from "../assets/media/h_learning.jpg";
+import ImgPedagogical from "../assets/media/h_pedagogical.jpg";
 
 
 const Home = () => {
@@ -59,7 +61,7 @@ const Home = () => {
   return (
     <div className="main">
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('home.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('home.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">
@@ -78,7 +80,7 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass="flex-center-v"
+              imageDivClass="embed-box-image"
               imgClass="box-contect-image"
               imageSrc={ImgConcept}
             >
@@ -95,7 +97,7 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass=""
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgEnvironment}
             >
@@ -109,7 +111,7 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass=""
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgLearning}
             >
@@ -128,7 +130,7 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass="flex-center-v"
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgPedagogical}
             >

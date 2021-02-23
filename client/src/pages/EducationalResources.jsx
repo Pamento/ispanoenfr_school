@@ -3,12 +3,15 @@ import "./educationalResources.css";
 import { useTranslation } from 'react-i18next';
 import Box from "../components/units/BoxColored";
 import SocialLinks from "../components/SocialsLinks";
+import EducationalBoxOfLinks from "../components/containers/EducationalBoxOfLinks";
+import Img from "../components/units/ImagePerform";
+// img
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
-import ImgBanderole from "../assets/media/banderole_educational.png";
-import EducationalBoxOfLinks from "../components/containers/EducationalBoxOfLinks";
+import ImgBanderole from "../assets/media/b_educational.png";
+import ImgBanderoleS from "../assets/media/b_educational_s.png";
 
 const EducationalResources = () => {
   const { t } = useTranslation();
@@ -55,7 +58,7 @@ const EducationalResources = () => {
   return (
     <div className="main">
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('about.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('about.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">

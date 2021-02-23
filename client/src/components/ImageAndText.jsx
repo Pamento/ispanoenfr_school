@@ -1,12 +1,12 @@
 import React from "react";
-// import Box from "./units/BoxColored";
+import Img from "../components/units/ImagePerform";
 
 const ImageAndText = (props) => (
   <div className={props.allClass}>
 
     <div id={props.idUnic} className={props.imageDivClass}>
       <div id={props.idBoxImg} className={props.imgClass}>
-        <img src={props.imageSrc} alt={props.imageDescript} />
+        <Img src={props.imageSrc} placeholder={props.placeholder} alt={props.imageDescript} />
       </div>
     </div>
 

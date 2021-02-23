@@ -1,14 +1,16 @@
 import React from "react";
 import { useTranslation } from 'react-i18next'
 import SocialLinks from "../SocialsLinks";
+import BoxLogo from "../units/BoxImgLink";
+import FooterNavigation from "../menu/FooterNavigation";
+import { BASE_URL } from "../../constants/basic";
+// img
 import InstagramWhite from "../../assets/icons/insta_white.png";
 import InstagramCoral from "../../assets/icons/insta_coral.png";
 import FacebookWhite from "../../assets/icons/face_white.png";
 import FacebookCoral from "../../assets/icons/face_coral.png";
-import BoxLogo from "../units/BoxImgLink";
 import LogoWhite from "../../assets/media/logo_blanc.png";
-import FooterNavigation from "../menu/FooterNavigation";
-import { BASE_URL } from "../../constants/basic";
+import LogoWhiteS from "../../assets/media/logo_blanc_s.png";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -20,6 +22,7 @@ const Footer = () => {
           linkHref={"#"}
           classSup="footer-logo"
           imgSrc={LogoWhite}
+          placeholder={LogoWhiteS}
           imgAlt={""} />
       </div>
       <div className="footer-main">

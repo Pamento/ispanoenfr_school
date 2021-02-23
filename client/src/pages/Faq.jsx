@@ -3,24 +3,32 @@ import './faq.css';
 import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
 
-import ImgBanderole from '../assets/media/banderole_faq.png';
 import Box from "../components/units/BoxColored";
 import SocialLinks from "../components/SocialsLinks";
+import SingleQuestion from "../components/FaqSingleQuestion";
+import Img from "../components/units/ImagePerform";
+// img
+import ImgBanderole from '../assets/media/b_faq.png';
+import ImgBanderoleS from '../assets/media/b_faq_s.png';
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
-import SingleQuestion from "../components/FaqSingleQuestion";
 import { BASE_URL } from "../constants/basic";
 
 
 const Faq = () => {
   const { t } = useTranslation();
   const [accordion, setAccordion] = useState([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
+  const [loaded, setLoaded] = useState('');
+
 
   useEffect(() => {
-    console.log(accordion);
-  })
+    if (loaded === '') {
+      window.scrollTo(0, 0);
+      setLoaded(window.location.hash);
+    }
+  }, [loaded]);
 
   const handleAccordion = (index) => {
     const updateAccordion = [...accordion];
@@ -33,7 +41,7 @@ const Faq = () => {
   return (
     <div className="main">
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('home.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('home.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">

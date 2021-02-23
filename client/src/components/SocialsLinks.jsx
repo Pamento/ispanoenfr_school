@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import Box from '../components/units/BoxColored';
 
 
 export default function DayOneBlue(props) {
+  const { t } = useTranslation();
 
   const [instaHovered, toggleIHover] = useState(false);
   const [faceHovered, toggleFHover] = useState(false);
@@ -22,10 +24,10 @@ export default function DayOneBlue(props) {
       >
         {instaHovered ? (
           <a href="https://www.instagram.com/cocoricoworkshop/" target="_blank" rel="noopener noreferrer">
-            <img src={props.hoveredInstagramIcon} alt="" /></a>
+            <img src={props.hoveredInstagramIcon} alt={t('global.btn-insta')} /></a>
         ) : (
           <a href="https://www.instagram.com/cocoricoworkshop/" target="_blank" rel="noopener noreferrer">
-            <img src={props.setInstagramIcon} alt="" /></a>
+            <img src={props.setInstagramIcon} alt={t('global.btn-insta')} /></a>
           )}
       </Box>
       <Box
@@ -35,10 +37,10 @@ export default function DayOneBlue(props) {
       >
         {faceHovered ? (
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img src={props.hoveredFacebookIcon} alt="" /></a>
+            <img src={props.hoveredFacebookIcon} alt={t('global.btn-facebook')} /></a>
         ) : (
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img src={props.setFacebookIcon} alt="" /></a>
+            <img src={props.setFacebookIcon} alt={t('global.btn-facebook')} /></a>
           )}
       </Box>
     </div>

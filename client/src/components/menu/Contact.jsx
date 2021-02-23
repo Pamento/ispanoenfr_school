@@ -12,7 +12,7 @@ const Contact = (props) => {
           <Link className={`nav-link  ${props.location.pathname === "/contact" ? "linkactive" : ""
             }`} to={{
             pathname: "/contact",
-            hash: "",
+            hash: "#top",
             state: { fromContact: true }
           }}>
             {t('menu.contact')}

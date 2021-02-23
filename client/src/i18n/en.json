@@ -1,6 +1,16 @@
 {
+  "global": {
+    "btn-chose-lang": "choice the language: first is english, second is french",
+    "btn-en": "choose english language",
+    "btn-fr": "choose French language",
+    "btn-insta": "go to instagram COCORICO-WORKSHOP",
+    "btn-facebook": "go to facebook COCORICO-WORKSHOP",
+    "btn-audio": "play audio with children's voice which speak french",
+    "btn-open": "open the subsection",
+    "btn-close": "close the subsection"
+  },
   "menu": {
-    "logo-alt": "",
+    "logo-alt": "Logo,COCORICO",
     "home": "HOME",
     "about": "ABOUT US",
     "educ-ressources": "EDUCATIONAL RESSOURCES",

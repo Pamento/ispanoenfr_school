@@ -1,4 +1,14 @@
 {
+  "global": {
+    "btn-chose-lang": "choisir la langue: le premier est l'anglais, le second est le français",
+    "btn-en": "choisissez la langue anglaise",
+    "btn-fr": "choisissez la langue française",
+    "btn-insta": "button pour aller sur instagram COCORICO-WORKSHOP",
+    "btn-facebook": "button pour aller sur facebook COCORICO-WORKSHOP",
+    "btn-audio": "jouer de l'audio avec la voix des enfants qui parle le français",
+    "btn-open": "ouvrir la sous-section",
+    "btn-close": "fermer la sous-section"
+  },
   "menu": {
     "logo-alt": "Logo+COCORICO",
     "home": "HOME",
