@@ -17,9 +17,9 @@ export default function HomePracticalInformations() {
   const { t } = useTranslation();
   return (
     <div className="box-two-colon">
-      <div className="row container-static">
+      <div className="row-picto container-static">
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoAge}
@@ -30,7 +30,7 @@ export default function HomePracticalInformations() {
         </ImageAndText>
 
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoStatistic}
@@ -40,9 +40,9 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.statistic')}</p>
         </ImageAndText>
       </div>
-      <div className="row container-static">
+      <div className="row-picto container-static">
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoCalendar}
@@ -52,7 +52,7 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.calendar')}</p>
         </ImageAndText>
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoGeo}
@@ -62,9 +62,9 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.geo')}</p>
         </ImageAndText>
       </div>
-      <div className="row container-static">
+      <div className="row-picto container-static">
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoStudents}
@@ -74,7 +74,7 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.students')}</p>
         </ImageAndText>
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoPrice}
@@ -84,9 +84,9 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.price')}</p>
         </ImageAndText>
       </div>
-      <div className="row container-static">
+      <div className="row-picto container-static">
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoEquipment}
@@ -96,7 +96,7 @@ export default function HomePracticalInformations() {
           <p className="box-text-p p-size-one-three">{t('home.practical.equipment')}</p>
         </ImageAndText>
         <ImageAndText
-          allClass="box-image-text box-picto-text"
+          allClass="box-picto-text"
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoRessource}

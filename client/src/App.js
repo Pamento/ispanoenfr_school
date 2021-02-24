@@ -1,4 +1,6 @@
 import './App.css';
+import './AppM.css';
+import './AppS.css';
 import './i18n';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "./components/containers/HomeHeader";

@@ -1,0 +1,125 @@
+@media (max-width: 425px) {
+
+  .section {
+    max-width: 100%;
+  }
+
+  .box-image-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3em;
+  }
+
+  .nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .nav-offset {
+    display: none;
+  }
+
+  .menu {
+    padding: 2em 0;
+  }
+
+  .menu-item {
+    min-width: 200px;
+  }
+
+  .menu-item-lang {
+    /* position: absolute;
+    display: flex;
+    padding: var(--size-smal);
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 2px;
+    left: -24px;
+    top: -30px; */
+    margin-left: 70px;
+  }
+
+  .menu-second-level {
+    display: none !important;
+  }
+
+  .subtitle {
+    font-size: initial;
+  }
+
+  .subtitle>h2 {
+    font-size: 40px;
+  }
+
+  .box-text>div {
+    padding: 2.5em 0;
+  }
+
+  .home-list-ul {
+    font-size: 1.3em !important;
+    margin: 0 0 !important;
+    text-align: left !important;
+  }
+
+  .box-contect-image>img {
+    max-height: initial;
+    height: auto;
+    width: 100% !important;
+  }
+
+  .box-image>img {
+    max-width: initial;
+    max-height: initial;
+    width: 100% !important;
+  }
+
+  .row-picto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-picto-text {
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+
+  .box-text-p {
+    text-align: left;
+    padding-right: 16px;
+  }
+
+  /* ------ education ------ */
+  .box-educ-link {
+    min-width: 30% !important;
+    height: 130px !important;
+  }
+
+  .box-educ-link a {
+    font-size: var(--size-normal) !important;
+  }
+
+  /* ------ testimony ------ */
+  .testimony-children-box {
+    height: 180px !important;
+  }
+
+  .btn-testimony-speecker {
+    width: var(--size-double) !important;
+    height: var(--size-double) !important;
+    background: transparent;
+    margin: 16px !important;
+  }
+
+  /* ------ faq ------ */
+  .faq-question-p {
+    font-size: var(--size-noraml) !important;
+    padding-right: 16px;
+    text-align: left;
+  }
+
+  /* ------ contact ------ */
+  .contact-msg-p {
+    font-size: 1.1em !important;
+  }
+}

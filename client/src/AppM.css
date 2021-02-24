@@ -1,0 +1,287 @@
+@media (max-width: 768px) {
+
+  .section {
+    max-width: 100%;
+  }
+
+  .box-image-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3em;
+  }
+
+  .nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .nav-offset {
+    display: none;
+  }
+
+  .menu {
+    padding: 2em 0;
+  }
+
+  .menu-item {
+    min-width: 200px;
+  }
+
+  .menu-item-lang {
+    margin-left: 70px;
+  }
+
+  .menu-second-level {
+    display: none !important;
+  }
+
+  .social-nap {
+    background-color: initial;
+    border-radius: initial;
+    box-shadow: initial;
+    position: relative;
+    padding: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    margin: 16px 16px 0;
+    justify-content: flex-end;
+  }
+
+  .subtitle {
+    font-size: initial;
+  }
+
+  .subtitle>h2 {
+    font-size: 40px;
+  }
+
+  .box-text>div {
+    padding: 2.5em 0;
+  }
+
+  .home-list-ul {
+    font-size: 1.3em;
+    margin: 0 0;
+    text-align: left;
+  }
+
+  .box-contect-image>img {
+    max-height: initial;
+    height: auto;
+    width: 100% !important;
+  }
+
+  .box-image>img {
+    max-width: initial;
+    max-height: initial;
+    width: 100% !important;
+  }
+
+  .box-home {
+    height: initial;
+  }
+
+  .row-picto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-picto-text {
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+
+  .box-text-p {
+    text-align: left;
+    padding-right: 16px;
+  }
+
+
+  .footer {
+    flex-direction: column;
+    padding-top: 2em;
+  }
+
+  .footer-box-logo {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  .footer-social {
+    margin: 72px auto;
+  }
+
+  .footer-menu {
+    display: block;
+    color: white;
+    word-spacing: 6px;
+    margin: auto;
+  }
+
+  .footer-menu>ul {
+    margin: 22px auto !important;
+  }
+
+  .footer-legacy {
+    margin: 64px auto 32px auto;
+  }
+
+  /* ------ about us ------ */
+  .box-stretch-horisontal {
+    flex-grow: 1;
+    padding: 0 !important;
+  }
+
+  .support-label {
+    padding: var(--size-double) !important;
+    font-size: var(--size-medium) !important;
+    word-spacing: 8px !important;
+  }
+
+  .box-all-support {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+
+  .humans {
+    width: 100%;
+  }
+
+  .box-humans {
+    padding: 0 !important;
+  }
+
+  .box-single-human {
+    max-width: 100% !important;
+    padding: var(--size-triple) var(--size-double) !important;
+    display: block !important;
+  }
+
+  .box-human-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: initial;
+    min-height: initial;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+
+  /* ------ education ------ */
+  .educ-p {
+    margin: 0;
+    font-size: var(--size-medium) !important;
+    padding: var(--size-triple) !important;
+  }
+
+  .five-color-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .box-educ-link {
+    min-width: 30% !important;
+    height: 230px !important;
+  }
+
+  /* ------ testimony ------ */
+  .testimony-action-p {
+    font-size: var(--size-medium) !important;
+  }
+
+  .testimony-children-box {
+    height: 230px !important;
+  }
+
+  .btn-testimony-speecker {
+    width: var(--size-big) !important;
+    height: var(--size-big) !important;
+    background: transparent;
+    margin: 20px !important;
+  }
+
+  .testimony-container {
+    padding: 0 !important;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .testimony-container-relative {
+    position: inherit !important;
+    width: inherit !important;
+    height: inherit !important;
+    padding: 40px !important;
+  }
+
+  .testimony-card {
+    border-radius: 10px;
+    position: inherit !important;
+    width: 400px !important;
+  }
+
+  .testimony-text-p {
+    padding: 16px !important;
+    font-size: 1em !important;
+  }
+
+  .textimony-span {
+    font-size: 16px !important;
+    font-weight: 700;
+  }
+
+  .testimony-image {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .box-testimony-link {
+    max-width: 220px !important;
+    min-height: 220px !important;
+  }
+
+  .box-testimony-link a {
+    font-size: var(--size-normal) !important;
+  }
+
+  /* ------ faq ------ */
+  .box-faq-question {
+    padding: var(--size-double) var(--size-normal) !important;
+    text-align: left;
+  }
+
+  .embed-faq-answer {
+    max-width: 100%;
+    margin-left: 1em;
+  }
+
+  /* ------ contact ------ */
+  .contact-msg-p {
+    font-size: 1.5em !important;
+    margin: 0 var(--size-normal) !important;
+  }
+
+  form {
+    margin: 1em !important;
+  }
+
+  .select,
+  .input,
+  .textarea {
+    width: 96% !important;
+  }
+
+  .check-and-submit {
+    justify-content: initial !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .btn-contact-submit-not-allowed,
+  .btn-contact-submit-disabled {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
