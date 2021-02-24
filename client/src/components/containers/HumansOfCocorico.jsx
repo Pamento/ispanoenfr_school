@@ -126,7 +126,7 @@ const HumansOfCocorico = () => {
             </div>}
         </>
         <>
-          {true &&
+          {isTechnicHovered &&
             <div className="box-humans box-blueLight"
               onMouseEnter={keepTechnikHoverIn}
               onMouseLeave={keepTechnikHoverOut}>

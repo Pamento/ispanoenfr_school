@@ -24,6 +24,7 @@ import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
+import WomanGlass from "../assets/icons/woman_glass.png";
 // audio
 import VoicePlayer from "../components/units/FrenchVoicePlayer";
 
@@ -197,9 +198,10 @@ const TestimonyAndGallery = () => {
             </div>
             <div className="testimony-container-relative">
               <ImageAndText
-              idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-yellow card-three"
-                imgClass="op-testymony-image testimony-image"
+                imgClass="testimony-image"
+                imageSrc={WomanGlass}
+                imageDescript={t('home.practical.age-picto-alt')}
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
@@ -207,19 +209,18 @@ const TestimonyAndGallery = () => {
                   {t('testimony-gallery.opinions.third-text')}</p>
               </ImageAndText>
             </div>
-            {/* <div className="testimony-container-relative">
+            <div className="testimony-container-relative">
               <ImageAndText
+                idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-blueLight card-fourth"
-                imgClass="testimony-image"
-                imageSrc={Woman}
-                imageDescript={t('home.practical.age-picto-alt')}
+                imgClass="op-testymony-image testimony-image"
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
                   <span className="textimony-span">{t('testimony-gallery.opinions.fourth-title')}<br /></span>
                   {t('testimony-gallery.opinions.fourth-text')}</p>
               </ImageAndText>
-            </div> */}
+            </div>
             {/* <div className="testimony-container-relative">
               <ImageAndText
                 allClass="row testimony-card testimony-card-pinkLight card-fifth"
