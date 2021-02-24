@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import Box from "../units/BoxColored";
 import ImageAndText from "../ImageAndText";
-//import Clemence from "../../assets/media/Clemence_Paulik.jpg";
-//import Pawel from "../../assets/media/pawel.jpeg";
 import ManGlass from "../../assets/icons/man_glass.png";
-import WomanGlass from "../../assets/icons/woman_glass.png";
-import Man from "../../assets/icons/man.png";
 import Woman from "../../assets/icons/woman.png";
 
 const HumansOfCocorico = () => {
@@ -68,28 +64,26 @@ const HumansOfCocorico = () => {
               onMouseEnter={keepComHoverIn}
               onMouseLeave={keepComHoverOut}>
               <ImageAndText
+                idUnic="soline"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                imgClass="box-img"
                 textDiv="box-text"
-                imageSrc={WomanGlass}
               >
                 <div>
                   <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
                 </div>
               </ImageAndText>
               <ImageAndText
+                idUnic="erwan"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                imgClass="box-img"
                 textDiv="box-text"
-                imageSrc={Man}
               >
                 <div>
                   <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
                 </div>
               </ImageAndText>
-              <ImageAndText
+              {/* <ImageAndText
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
                 imgClass="box-img"
@@ -99,7 +93,7 @@ const HumansOfCocorico = () => {
                 <div>
                   <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
                 </div>
-              </ImageAndText>
+              </ImageAndText> */}
             </div>}
         </>
         <>
@@ -132,7 +126,7 @@ const HumansOfCocorico = () => {
             </div>}
         </>
         <>
-          {isTechnicHovered &&
+          {true &&
             <div className="box-humans box-blueLight"
               onMouseEnter={keepTechnikHoverIn}
               onMouseLeave={keepTechnikHoverOut}>
@@ -140,9 +134,7 @@ const HumansOfCocorico = () => {
                 idUnic="pawel"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                // imgClass="box-img"
                 textDiv="box-text"
-              // imageSrc={Pawel}
               >
                 <div>
                   <p className="box-text-p p-size-m">{t('about.humans-of.pawel')}</p>

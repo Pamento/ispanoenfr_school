@@ -24,18 +24,10 @@
   }
 
   .menu-item {
-    min-width: 200px;
+    min-width: 160px;
   }
 
   .menu-item-lang {
-    /* position: absolute;
-    display: flex;
-    padding: var(--size-smal);
-    flex-direction: column;
-    background-color: var(--White);
-    border-radius: 2px;
-    left: -24px;
-    top: -30px; */
     margin-left: 70px;
   }
 
@@ -48,7 +40,7 @@
   }
 
   .subtitle>h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .box-text>div {
@@ -87,6 +79,14 @@
   .box-text-p {
     text-align: left;
     padding-right: 16px;
+  }
+
+  /* ------ about us ------- */
+  .box-human-image {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    min-height: 180px !important;
   }
 
   /* ------ education ------ */
@@ -138,5 +138,37 @@
     right: 0;
     padding: var(--size-smal) !important;
     background-color: var(--white);
+  }
+}
+
+@media (max-width: 320px) {
+  .menu-item {
+    min-width: 112px;
+  }
+
+  .menu-first-level a {
+    line-height: 20px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+  }
+
+  .box-picto>img {
+    max-width: 80px !important;
+    max-height: 50px !important;
+  }
+
+  .social-icon>a>img {
+    width: 36px;
+  }
+
+  .box-social-links {
+    width: 120px !important;
+  }
+
+  .box-human-image {
+    width: 150px !important;
+    height: 150px !important;
+    min-width: 150px !important;
+    min-height: 150px !important;
   }
 }
