@@ -111,6 +111,15 @@
     margin: 16px !important;
   }
 
+  .testimony-card {
+    font-size: 1em !important;
+  }
+
+  .box-testimony-link {
+    max-width: 220px !important;
+    min-height: 220px !important;
+  }
+
   /* ------ faq ------ */
   .faq-question-p {
     font-size: var(--size-noraml) !important;
@@ -121,5 +130,13 @@
   /* ------ contact ------ */
   .contact-msg-p {
     font-size: 1.1em !important;
+  }
+
+  .msg-sent-error {
+    max-width: 96% !important;
+    top: 0;
+    right: 0;
+    padding: var(--size-smal) !important;
+    background-color: var(--white);
   }
 }

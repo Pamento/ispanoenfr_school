@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .section {
     max-width: 100%;
@@ -194,7 +194,7 @@
   }
 
   .testimony-children-box {
-    height: 230px !important;
+    height: 250px !important;
   }
 
   .btn-testimony-speecker {
@@ -211,16 +211,17 @@
   }
 
   .testimony-container-relative {
-    position: inherit !important;
-    width: inherit !important;
+    /* position: inherit !important;
+    width: inherit !important; */
     height: inherit !important;
-    padding: 40px !important;
+    padding: 46px !important;
   }
 
   .testimony-card {
     border-radius: 10px;
     position: inherit !important;
-    width: 400px !important;
+    width: 460px !important;
+    font-size: 1.2em;
   }
 
   .testimony-text-p {
@@ -239,7 +240,6 @@
   }
 
   .box-testimony-link {
-    max-width: 220px !important;
     min-height: 220px !important;
   }
 
@@ -283,5 +283,29 @@
   .btn-contact-submit-disabled {
     overflow-x: auto;
     overflow-y: hidden;
+  }
+
+  .msg-sent-error {
+    background-color: var(--white);
+  }
+
+  .msg-sent-error-p {
+    font-size: var(--size-smal) !important;
+    font-weight: 300 !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ------ testimony ------ */
+  .testimony-container-relative {
+    position: inherit !important;
+    width: inherit !important;
+    height: inherit !important;
+    padding: 40px !important;
+  }
+
+  .testimony-children-box {
+    height: 230px !important;
   }
 }
