@@ -37,7 +37,7 @@ app.use(cookieParser());
 // static file for join with files from 'views' folder
 app.use(express.static(path.join(__dirname, 'public')));
 // static file for client react build to serve at user
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use('/', clientApp);
