@@ -137,7 +137,7 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
               >
                 <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.pawel')}</p>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.technic-human-1')}</p>
                 </div>
               </ImageAndText>
               {/* <ImageAndText

@@ -28,12 +28,17 @@ exports.sendEmail = (req,res) => {
   console.dir(tanto);
 
 
-
-  if(req.body.constructor === Object && Object.keys(req.body).length === 0) {
-    console.log('Object missing');
-  } else {
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({"success": "OK"}));
+  try {
+    if(req.body.constructor === Object && Object.keys(req.body).length === 0) {
+      res.status(400);
+    } else {
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify({"success": "OK"}));
+    }
+  } catch (error) {
+    res.status(400);
   }
+
+
 
 }

@@ -201,7 +201,7 @@ const TestimonyAndGallery = () => {
                 allClass="row testimony-card testimony-card-yellow card-three"
                 imgClass="testimony-image"
                 imageSrc={WomanGlass}
-                imageDescript={t('home.practical.age-picto-alt')}
+                imageDescript={t('home.practical.testimony-gallery.opinions.third-title')}
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">

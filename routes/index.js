@@ -19,7 +19,13 @@ router.get('/thum-x-Hr-07etalpmehtuizxOnE', function (req, res, next) {
     msg: "Bonjour, how are you ?"
   }
 
-  res.render('temp-msg', {tento:tentos});
+  try {
+    res.render('temp-msg', {tento:tentos});
+  } catch (error) {
+    // send 404 page
+    res.status(400);
+  }
+  
 });
 
 router.get('/:file', sendPDF.sendPDF)
