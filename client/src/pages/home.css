@@ -9,7 +9,7 @@
 }
 
 .box-text-single-p {
-  margin: 4px 3em;
+  margin: 4px 0;
   text-align: left;
 }
 
@@ -26,4 +26,9 @@
   width: auto;
   height: auto;
   border-radius: 5px;
+}
+
+.h2-title {
+  text-align: left;
+  font-size: 2em;
 }

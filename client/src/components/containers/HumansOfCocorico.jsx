@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import Box from "../units/BoxColored";
 import ImageAndText from "../ImageAndText";
-//import Clemence from "../../assets/media/Clemence_Paulik.jpg";
-//import Pawel from "../../assets/media/pawel.jpeg";
 import ManGlass from "../../assets/icons/man_glass.png";
-import WomanGlass from "../../assets/icons/woman_glass.png";
-import Man from "../../assets/icons/man.png";
 import Woman from "../../assets/icons/woman.png";
 
 const HumansOfCocorico = () => {
@@ -68,32 +64,36 @@ const HumansOfCocorico = () => {
               onMouseEnter={keepComHoverIn}
               onMouseLeave={keepComHoverOut}>
               <ImageAndText
+                idUnic="soline"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                imgClass="box-img"
                 textDiv="box-text"
-                imageSrc={WomanGlass}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.communication')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
               </ImageAndText>
               <ImageAndText
+                idUnic="erwan"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                imgClass="box-img"
                 textDiv="box-text"
-                imageSrc={Man}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.communication')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
               </ImageAndText>
-              <ImageAndText
+              {/* <ImageAndText
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
                 imgClass="box-img"
                 textDiv="box-text"
                 imageSrc={Woman}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.communication')}</p>
-              </ImageAndText>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                </div>
+              </ImageAndText> */}
             </div>}
         </>
         <>
@@ -108,7 +108,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={ManGlass}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.academic')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                </div>
               </ImageAndText>
               <ImageAndText
                 allClass="box-single-human container-static"
@@ -117,7 +119,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Woman}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.academic')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                </div>
               </ImageAndText>
             </div>}
         </>
@@ -130,11 +134,11 @@ const HumansOfCocorico = () => {
                 idUnic="pawel"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                // imgClass="box-img"
                 textDiv="box-text"
-              // imageSrc={Pawel}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of.pawel')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.technic-human-1')}</p>
+                </div>
               </ImageAndText>
               {/* <ImageAndText
                 allClass="box-single-human container-static"
@@ -143,7 +147,9 @@ const HumansOfCocorico = () => {
                 textDiv="box-text"
                 imageSrc={Man}
               >
-                <p className="box-text-p p-size-medium">{t('about.humans-of')}</p>
+                <div>
+                  <p className="box-text-p p-size-m">{t('about.humans-of')}</p>
+                </div>
               </ImageAndText> */}
             </div>}
         </>

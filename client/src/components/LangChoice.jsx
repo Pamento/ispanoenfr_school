@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import Box from "./units/BoxColored";
 import ItemLangBtn from "./units/ButtonEvent";
 import IconLanguage from "../assets/icons/picto_langues.png";
@@ -8,6 +9,7 @@ import { ReactComponent as IconFlagGb } from "../assets/icons/gb.svg";
 
 
 const LangChoice = (props) => {
+  const { t } = useTranslation();
   const [isHovered, toggleHover] = useState(false);
 
 
@@ -23,25 +25,25 @@ const LangChoice = (props) => {
       {isHovered ? (
         <div className="menu-item-lang">
           <div className="icon-size">
-            <img src={IconLanguageCoral} alt="" />
+            <img src={IconLanguageCoral} alt={t('global.btn-chose-lang')} />
           </div>
           <ItemLangBtn btnClass="btn-lang icon-size"
             eventValue="en"
             handleOnClick={props.setLanguage}
           >
-            <IconFlagGb />
+            <IconFlagGb alt={t('global.btn-en')} />
           </ItemLangBtn>
           <ItemLangBtn btnClass=" btn-lang icon-size"
             eventValue="fr"
             handleOnClick={props.setLanguage}
           >
-            <IconFlagFr />
+            <IconFlagFr alt={t('global.btn-fr')} />
           </ItemLangBtn>
         </div>
       ) : (
           <div className="menu-item-lang">
             <div className="icon-size">
-              <img src={IconLanguage} alt="" />
+              <img src={IconLanguage} alt={t('global.btn-chose-lang')} />
             </div>
           </div>
         )}

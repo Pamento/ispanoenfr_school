@@ -1,27 +1,30 @@
 import React, { useEffect, useRef, useState } from "react";
 import './TestimonyAndGallery.css';
 import { useTranslation } from 'react-i18next';
-
-import ImgBanderole from '../assets/media/banderol_testimony.png';
 import Box from "../components/units/BoxColored";
 import ImageAndText from '../components/ImageAndText';
 import SubTitle from '../components/SubTitle';
 import SocialLinks from "../components/SocialsLinks";
+import MultiColorBoxRow from "../components/units/MultiColorBoxRow";
+import Img from "../components/units/ImagePerform";
+// img
+import ImgBanderole from '../assets/media/b_testimony.png';
+import ImgBanderoleS from '../assets/media/b_testimony_s.png';
+import ChildOne from "../assets/media/action_f_frange.png";
+import ChildOneS from "../assets/media/action_f_frange_s.png";
+import ChildTwo from "../assets/media/action_enfant_noir.png";
+import ChildTwoS from "../assets/media/action_enfant_noir_s.png";
+import ChildThree from "../assets/media/action_f_lunette.png";
+import ChildThreeS from "../assets/media/action_f_lunette_s.png";
+import ChildFour from "../assets/media/action_g_coquin.png";
+import ChildFourS from "../assets/media/action_g_coquin_s.png";
+import ChildFive from '../assets/media/action_f_asiatique.png';
+import ChildFiveS from '../assets/media/action_f_asiatique_s.png';
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
-import MultiColorBoxRow from "../components/units/MultiColorBoxRow";
-import ChildOne from "../assets/media/action_fille_frange.png";
-import ChildTwo from "../assets/media/action_enfant_noir.png";
-import ChildThree from "../assets/media/action_fille_lunette.png";
-import ChildFour from "../assets/media/action_garcon_coquin.png";
-import ChildFive from '../assets/media/action_fille_asiatique.png';
-// import ManGlass from "../assets/icons/man_glass.png";
-//import WomanGlass from "../assets/icons/woman_glass.png";
-// import Man from "../assets/icons/man.png";
-// import Valerie from "../assets/media/valerie.jpg";
-// import Woman from "../assets/icons/woman.png";
+import WomanGlass from "../assets/icons/woman_glass.png";
 // audio
 import VoicePlayer from "../components/units/FrenchVoicePlayer";
 
@@ -140,7 +143,7 @@ const TestimonyAndGallery = () => {
   return (
     <div className="main" onMouseLeave={toggle(-1)} >
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('about.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('about.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">
@@ -157,11 +160,11 @@ const TestimonyAndGallery = () => {
           <div className="container-static">
             <p className="testimony-action-p">{t('testimony-gallery.action-subtitle')}</p>
             <div className="five-color-row">
-              <VoicePlayer onHandleAudio={toggle(0)} childOne={ChildOne} speeckerSide={"left"} color={"blue"} />
-              <VoicePlayer onHandleAudio={toggle(1)} childOne={ChildTwo} speeckerSide={"right"} color={"blueLight"} />
-              <VoicePlayer onHandleAudio={toggle(2)} childOne={ChildThree} speeckerSide={"left"} color={"yellow"} />
-              <VoicePlayer onHandleAudio={toggle(3)} childOne={ChildFour} speeckerSide={"left"} color={"pink"} />
-              <VoicePlayer onHandleAudio={toggle(4)} childOne={ChildFive} speeckerSide={"right"} color={"pinkLight"} />
+              <VoicePlayer onHandleAudio={toggle(0)} childOne={ChildOne} placeholder={ChildOneS} alt={t('testimony-gallery.action-img1-alt')} speeckerSide={"left"} color={"blue"} />
+              <VoicePlayer onHandleAudio={toggle(1)} childOne={ChildTwo} placeholder={ChildTwoS} alt={t('testimony-gallery.action-img2-alt')} speeckerSide={"right"} color={"blueLight"} />
+              <VoicePlayer onHandleAudio={toggle(2)} childOne={ChildThree} placeholder={ChildThreeS} alt={t('testimony-gallery.action-img3-alt')} speeckerSide={"left"} color={"yellow"} />
+              <VoicePlayer onHandleAudio={toggle(3)} childOne={ChildFour} placeholder={ChildFourS} alt={t('testimony-gallery.action-img4-alt')} speeckerSide={"left"} color={"pink"} />
+              <VoicePlayer onHandleAudio={toggle(4)} childOne={ChildFive} placeholder={ChildFiveS} alt={t('testimony-gallery.action-img5-alt')} speeckerSide={"right"} color={"pinkLight"} />
             </div>
           </div>
           <div className="section">
@@ -195,9 +198,10 @@ const TestimonyAndGallery = () => {
             </div>
             <div className="testimony-container-relative">
               <ImageAndText
-              idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-yellow card-three"
-                imgClass="op-testymony-image testimony-image"
+                imgClass="testimony-image"
+                imageSrc={WomanGlass}
+                imageDescript={t('home.practical.testimony-gallery.opinions.third-title')}
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
@@ -205,19 +209,18 @@ const TestimonyAndGallery = () => {
                   {t('testimony-gallery.opinions.third-text')}</p>
               </ImageAndText>
             </div>
-            {/* <div className="testimony-container-relative">
+            <div className="testimony-container-relative">
               <ImageAndText
+                idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-blueLight card-fourth"
-                imgClass="testimony-image"
-                imageSrc={Woman}
-                imageDescript={t('home.practical.age-picto-alt')}
+                imgClass="op-testymony-image testimony-image"
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
                   <span className="textimony-span">{t('testimony-gallery.opinions.fourth-title')}<br /></span>
                   {t('testimony-gallery.opinions.fourth-text')}</p>
               </ImageAndText>
-            </div> */}
+            </div>
             {/* <div className="testimony-container-relative">
               <ImageAndText
                 allClass="row testimony-card testimony-card-pinkLight card-fifth"

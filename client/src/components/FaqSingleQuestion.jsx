@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import '../pages/faq.css';
 // import { CSSTransition } from 'react-transition-group';
 import CaretDown from "../assets/icons/caretDown.png";
@@ -6,6 +7,7 @@ import CaretUp from "../assets/icons/caretUp.png";
 
 
 const SingleQuestion = (props) => {
+  const { t } = useTranslation();
 
   return (
     <div className="container-relative">
@@ -14,7 +16,7 @@ const SingleQuestion = (props) => {
         onClick={() => props.onQuestionClick()}
       >
         <p className="faq-question-p">{props.question}</p>
-        {props.isClicked ? (<img src={CaretUp} alt="" />) : (<img src={CaretDown} alt="" />)}
+        {props.isClicked ? (<img src={CaretUp} alt={t('global.btn-close')} />) : (<img src={CaretDown} alt={t('global.btn-open')} />)}
       </div>
       <div className="answer-row">
         {props.children}

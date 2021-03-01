@@ -36,6 +36,10 @@
   justify-content: center;
   min-width: 250px;
   min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .box-img {
@@ -60,8 +64,22 @@
 
 #pawel {
   background-image: url('../assets/media/pawel.jpeg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 50%; */
+}
+#soline {
+  background-image: url('../assets/media/soline.jpg');
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; */
+}
+#erwan {
+  background-image: url('../assets/media/erwan.jpg');
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; */
 }

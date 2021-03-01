@@ -1,9 +1,10 @@
 import React from "react";
+import Img from "../units/ImagePerform";
 
 const ImageLinked = (props) => (
   <div className={'box-link-image ' + props.classSup}>
     <a href={props.linkHref} target="_blank" rel="noopener noreferrer">
-      <img src={props.imgSrc} alt={props.imgAlt} />
+      <Img src={props.imgSrc} placeholder={props.placeholder} alt={props.imgAlt} />
     </a>
   </div>
 );

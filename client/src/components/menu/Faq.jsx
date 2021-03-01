@@ -12,7 +12,7 @@ const Faq = (props) => {
         <Link className={`nav-link  ${props.location.pathname === "/faq" ? "linkactive" : ""
             }`} to={{
           pathname: "/faq",
-          hash: "",
+          hash: "#top",
           state: { fromFaq: true }
         }}>
           {t('menu.faq')}

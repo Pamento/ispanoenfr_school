@@ -5,14 +5,17 @@ import Box from "../components/units/BoxColored";
 import ImageAndText from '../components/ImageAndText';
 import SubTitle from '../components/SubTitle';
 import SocialLinks from "../components/SocialsLinks";
+import HumansOfCocorico from "../components/containers/HumansOfCocorico";
+import Img from "../components/units/ImagePerform";
+// img
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
-import ImgBanderole from "../assets/media/about-us_banderole.png";
+import ImgBanderole from "../assets/media/b_about-us.png";
+import ImgBanderoleS from "../assets/media/b_about_s.png";
 import Valerie from "../assets/media/valerie.jpg";
-import Sponsors from "../assets/media/sponsors.jpg";
-import HumansOfCocorico from "../components/containers/HumansOfCocorico";
+import Sponsors from "../assets/icons/sponsor.png";
 
 const About = () => {
   const { t } = useTranslation();
@@ -48,7 +51,7 @@ const About = () => {
   return (
     <div className="main">
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('about.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('about.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">
@@ -69,9 +72,9 @@ const About = () => {
               imageSrc={Valerie}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about2')}</p>
-                <p className="box-text-single-p p-size-medium">{t('about.valerie-about3')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about1')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about2')}</p>
+                <p className="box-text-single-p p-size-m">{t('about.valerie-about3')}</p>
                 {/* <a href="#">{t('about.valerie-about-link')}</a> */}
               </div>
             </ImageAndText>
@@ -87,7 +90,10 @@ const About = () => {
               imgClass="box-image"
               imageSrc={Sponsors}
             >
-              <p className="box-text-p p-size-medium">{t('about.sponsors-text')}</p>
+              <div>
+              <p className="box-text-p p-size-m">{t('about.sponsors-text')}</p>                
+              </div>
+
             </ImageAndText>
           </div>
         </div>

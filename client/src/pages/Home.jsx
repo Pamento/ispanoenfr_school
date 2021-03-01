@@ -1,22 +1,24 @@
 import React, { useState, useEffect, useRef } from "react";
 import './home.css'
 import { useTranslation } from 'react-i18next';
-
-import ImgBanderole from '../assets/media/home_banderole.jpg';
-import ImgEnvironment from "../assets/media/home_workshop.jpg";
-import ImgConcept from "../assets/media/home_concept.jpg";
-import ImgLearning from "../assets/media/home_learning.jpg";
-import ImgPedagogical from "../assets/media/home_pedagogical.jpg";
 import Box from "../components/units/BoxColored";
 import WeekContainer from '../components/containers/WeekSchedule';
 import ImageAndText from '../components/ImageAndText';
 import SubTitle from '../components/SubTitle';
 import HomePracticInformations from "../components/containers/HomePracticInformations";
+import Img from "../components/units/ImagePerform";
 import SocialLinks from "../components/SocialsLinks";
+// img
 import InstagramNavy from "../assets/icons/insta_navy.png";
 import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
+import ImgBanderole from '../assets/media/b_home.jpg';
+import ImgBanderoleS from '../assets/media/b_home_s.jpg';
+import ImgEnvironment from "../assets/media/h_workshop.jpg";
+import ImgConcept from "../assets/media/h_concept.jpg";
+import ImgLearning from "../assets/media/h_learning.jpg";
+import ImgPedagogical from "../assets/media/h_pedagogical.jpg";
 
 
 const Home = () => {
@@ -43,23 +45,23 @@ const Home = () => {
   }
   const executeScroll = (r) => r.scrollIntoView();
   useEffect(() => {
-  if (loaded === '' || loaded !== window.location.hash) {
-    if (window.location.hash === undefined || window.location.hash === null || window.location.hash === '' || window.location.hash === '#top') {
-      scrollToTop();
-      setLoaded(window.location.hash);
-    } else {
-      const getRef = aboutRef.find(e => e.hashtag === window.location.hash);
-      executeScroll(getRef.referance.current);
+    if (loaded === '' || loaded !== window.location.hash) {
+      if (window.location.hash === undefined || window.location.hash === null || window.location.hash === '' || window.location.hash === '#top') {
+        scrollToTop();
+        setLoaded(window.location.hash);
+      } else {
+        const getRef = aboutRef.find(e => e.hashtag === window.location.hash);
+        executeScroll(getRef.referance.current);
+        setLoaded(window.location.hash);
+      }
       setLoaded(window.location.hash);
     }
-    setLoaded(window.location.hash);
-  }
-},[loaded,aboutRef]);
+  }, [loaded, aboutRef]);
 
   return (
     <div className="main">
       <Box allClass="box-banner">
-        <img src={ImgBanderole} alt={t('home.main-img-alt')} />
+        <Img src={ImgBanderole} placeholder={ImgBanderoleS} alt={t('home.main-img-alt')} />
       </Box>
       <div className="container-relative">
         <div className="social-nap">
@@ -70,23 +72,24 @@ const Home = () => {
             hoveredFacebookIcon={FacebookCoral} />
         </div>
         <div className="container">
+
           <div className="section">
             <div ref={conceptRef} >
-
               <SubTitle hashHref="#concept" subtitleClass="subtitle" subtitle={t('home.concept')} onElementClic={scrollToTop} />
             </div>
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass="flex-center-v"
+              imageDivClass="embed-box-image"
               imgClass="box-contect-image"
               imageSrc={ImgConcept}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text2')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text3')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.concept-text4')}</p>
+                <p className="box-text-single-p p-size-m text-bold p-text-coral">{t('home.concept-text1')}</p>
+                <p className="box-text-single-p p-size-m text-bold p-text-coral">{t('home.concept-text2')}</p>
+                <br />
+                <p className="box-text-single-p p-size-m">{t('home.concept-text3')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.concept-text4')}</p>
               </div>
             </ImageAndText>
 
@@ -94,13 +97,13 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass=""
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgEnvironment}
             >
               <div>
-                <p className="box-text-single-p p-size-medium">{t('home.spotlight-text-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.spotlight-text-p2')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.spotlight-text-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.spotlight-text-p2')}</p>
               </div>
             </ImageAndText>
 
@@ -108,7 +111,7 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass=""
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgLearning}
             >
@@ -127,14 +130,14 @@ const Home = () => {
             <ImageAndText
               allClass="box-image-text"
               textDiv="box-text"
-              imageDivClass="flex-center-v"
+              imageDivClass="embed-box-image"
               imgClass="box-image"
               imageSrc={ImgPedagogical}
             >
               <div>
-                <h3>{t('home.pedagogical-subtitle1')}</h3>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-text-p2')}</p>
+                <h2 className="h2-title" >{t('home.pedagogical-subtitle1')}</h2>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-text-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-text-p2')}</p>
                 <br />
                 <ul className="home-list-ul">
                   <li>{t('home.pedagogical-list1-p1')}</li>
@@ -145,7 +148,8 @@ const Home = () => {
                   <li>{t('home.pedagogical-list1-p6')}</li>
                 </ul>
                 <br />
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-list2-p1')}</p>
+                <h2 className="h2-title" >{t('home.pedagogical-list2-p1')}</h2>
+                {/* <p className="box-text-single-p p-size-m">{t('home.pedagogical-list2-p1')}</p> */}
                 <ul className="home-list-ul">
                   <li>{t('home.pedagogical-list2-p2')}</li>
                   <li>{t('home.pedagogical-list2-p3')}</li>
@@ -156,16 +160,18 @@ const Home = () => {
                   <li>{t('home.pedagogical-list2-p8')}</li>
                   <li>{t('home.pedagogical-list2-p9')}</li>
                 </ul>
-                <h3>{t('home.pedagogical-subtitle2')}</h3>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p1')}</p>
-                <p className="box-text-single-p p-size-medium">{t('home.pedagogical-tools-p2')}</p>
+                <br />
+                <h2 className="h2-title" >{t('home.pedagogical-subtitle2')}</h2>
+                {/* <p className="box-text-single-p p-size-m">{t('home.pedagogical-subtitle2')}</p> */}
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-tools-p1')}</p>
+                <p className="box-text-single-p p-size-m">{t('home.pedagogical-tools-p2')}</p>
               </div>
             </ImageAndText>
             <SubTitle ref={typicalRef} hashHref="#typical" subtitleClass="subtitle" subtitle={t('home.typical.subtitle')} onElementClic={scrollToTop} />
           </div>
           <div className="container-static home-box-descr">
-            <p className="p-size-medium">{t('home.typical.description')}</p>
-            <p className="p-size-medium">{t('home.typical.description-add')}</p>
+            <p className="p-size-m">{t('home.typical.description')}</p>
+            <p className="p-size-m">{t('home.typical.description-add')}</p>
           </div>
           <WeekContainer />
         </div>

@@ -15,7 +15,8 @@ export default function DayOneBlue(props) {
     >
       {isHovered ? (
         <div className="box-day box-coral">
-          <p className="dialog-message p-size-medium">{props.message}</p>
+          <p className="dialog-message p-size-m">{props.message1}</p>
+          <p className="dialog-message p-size-m"><span className="text-bold">{props.spanBold}</span>{props.message2}</p>
         </div>
       ) : (
         <div className={"box-day box-" + props.color}>

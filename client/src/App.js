@@ -1,4 +1,6 @@
 import './App.css';
+import './AppM.css';
+import './AppS.css';
 import './i18n';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "./components/containers/HomeHeader";
@@ -11,6 +13,16 @@ import Contact from "./pages/Contact";
 import Footer from "./components/containers/Footer";
 
 function App() {
+
+  const options = { year: 'numeric', month: 'long' }
+  const today = new Date();
+
+  const getDateAtMoment = () => {
+    return today.toLocaleDateString("en-US", options);
+  }
+  const newDate = getDateAtMoment();
+  // setDate(newDate);
+
   return (
     <div className="App">
       <Router>
@@ -24,6 +36,7 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} />
         </Switch>
         <Footer />
+        <p className="home-author"><a href="https://fr.linkedin.com/in/pawel-grzesik" target="_blank" rel="noopener noreferrer">Pamento | </a> <span>{newDate}</span> </p>
       </Router>
     </div>
   );

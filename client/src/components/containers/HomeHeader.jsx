@@ -4,11 +4,11 @@ import { Language } from "../../i18n/Language";
 import LangChoice from "../LangChoice";
 import Navigation from "../menu/Navigation";
 import BoxImgLink from "../units/BoxImgLink";
-//import LogoGif from "../../assets/media/logo_anim.gif";
 import LogoColor from "../../assets/media/logo_rvb.png";
+import LogoColorS from "../../assets/media/logo_rvb_s.png";
 
 const Header = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(i18n.language);
 
   let changeLanguage = (lang) => {
@@ -32,7 +32,8 @@ const Header = () => {
           linkHref={"#"}
           classSup="logo"
           imgSrc={LogoColor}
-          imgAlt={""} />
+          placeholder={LogoColorS}
+          imgAlt={t('menu.logo-alt')} />
       </div>
       <div className="nav">
         <div className="nav-lang nav-offset"></div>
