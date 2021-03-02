@@ -168,9 +168,14 @@ const Home = () => {
             </ImageAndText>
             <SubTitle ref={typicalRef} hashHref="#typical" subtitleClass="subtitle" subtitle={t('home.typical.subtitle')} onElementClic={scrollToTop} />
           </div>
-          <div className="container-static home-box-descr">
+          <div className="home-box-descr">
             <p className="p-size-m">{t('home.typical.description')}</p>
             <p className="p-size-m">{t('home.typical.description-add')}</p>
+            <ul>
+              <li>{t('home.typical.typical-list-1')}</li>
+              <li>{t('home.typical.typical-list-2')}</li>
+              <li>{t('home.typical.typical-list-3')}</li>
+            </ul>
           </div>
           <WeekContainer />
         </div>

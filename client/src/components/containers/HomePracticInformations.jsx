@@ -36,7 +36,9 @@ export default function HomePracticalInformations() {
           imageDescript={t('home.practical.level-picto-alt')}
           textDiv="box-text"
         >
-          <p className="box-text-p p-size-one-three">{t('home.practical.level')}</p>
+          <p className="box-text-p p-size-one-three">{t('home.practical.level')}
+          <a href={t('home.practical.level-link')} target="_blank" rel="noopener noreferrer">CECR</a>)
+          </p>
         </ImageAndText>
       </div>
       <div className="row-picto container-static">

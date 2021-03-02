@@ -1,8 +1,13 @@
 const path = require('path');
+const jade = require('jade');
+fs = require('fs');
 const winston = require('../config/winston');
 require("dotenv").config();
 
 exports.sendEmail = (req, res) => {
+  // const pat = path.resolve(__dirname, '../views/temp-msg.jade');
+  // console.log(__dirname);
+  // console.log('path: ' + pat);
   let tanto = {}, html = '';
   try {
     if (Object.keys(req.body).length !== 0) {
@@ -13,31 +18,43 @@ exports.sendEmail = (req, res) => {
       tanto.email = req.body.email === '' ? ' ...' : req.body.email === 'string' ? req.body.email : JSON.stringify(req.body.email);
       tanto.subject = req.body.subject === '' ? ' ...' : req.body.subject === 'string' ? req.body.subject : JSON.stringify(req.body.subject);
       tanto.msg = req.body.msg === '' ? ' ...' : req.body.msg === 'string' ? req.body.msg : JSON.stringify(req.body.msg);
+      html = jade.renderFile(pat, tanto);
     }
+
+    fs.readFile('temp-msg.jade', 'utf8', function (err, data) {
+      if (err) winston.error(err);
+      console.log(data);
+      var fn = jade.compile(data);
+      html = fn(tanto);
+      console.log(html);
+    });
+
+
+    // console.log(html);
 
 
     const mailjet = require('node-mailjet')
-    .connect(process.env.MJ_APIKEY_PUBLIC,process.env.MJ_APIKEY_PRIVATE)
+      .connect(process.env.MJ_APIKEY_PUBLIC, process.env.MJ_APIKEY_PRIVATE)
     const request = mailjet
-    .post("send", {'version': 'v3.1'})
-    .request({
-      "Messages":[
-        {
-          "From": {
-            "Email": tanto.email,
-            "Name": "Visitor"
-          },
-          "To": [
-            {
-              "Email": process.env.FR_TO,
-              "Name": "Valerie"
-            }
-          ],
-          "Subject": tanto.subject,
-          "TextPart": "My Mailjet email",
-          "HTMLPart": html,
-          "CustomID": "AppGettingStartedTest"
-        }
+      .post("send", { 'version': 'v3.1' })
+      .request({
+        "Messages": [
+          {
+            "From": {
+              "Email": tanto.email,
+              "Name": "Visitor"
+            },
+            "To": [
+              {
+                "Email": process.env.FR_TO,
+                "Name": "Valerie"
+              }
+            ],
+            "Subject": tanto.subject,
+            "TextPart": "My Mailjet email",
+            "HTMLPart": html,
+            "CustomID": "AppGettingStartedTest"
+          }
         ]
       })
     request

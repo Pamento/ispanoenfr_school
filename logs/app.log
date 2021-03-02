@@ -1,0 +1,8 @@
+{"errno":-2,"syscall":"open","code":"ENOENT","path":"../views/temp-msg.jade","level":"error"}
+{"errno":-2,"syscall":"open","code":"ENOENT","path":"temp-msg","level":"error"}
+{"errno":-2,"syscall":"open","code":"ENOENT","path":"/home/pawel/Documents/Projects/cocorico_valerie/views/temp-msg.jade","level":"error"}
+{"errno":-2,"syscall":"open","code":"ENOENT","path":"/views/temp-msg.jade","level":"error"}
+{"errno":-2,"syscall":"open","code":"ENOENT","path":"/views/temp-msg.jade","level":"error"}
+{"path":"/home/pawel/Documents/Projects/cocorico_valerie/cocorico-app/views/temp-msg.jade","level":"error"}
+{"path":"/home/pawel/Documents/Projects/cocorico_valerie/cocorico-app/views/temp-msg.jade","level":"error"}
+{"level":"error"}

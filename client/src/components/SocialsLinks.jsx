@@ -36,10 +36,10 @@ export default function DayOneBlue(props) {
         handleHoverOut={handleFaceHover}
       >
         {faceHovered ? (
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/Cocorico-101963548625955" target="_blank" rel="noopener noreferrer">
             <img src={props.hoveredFacebookIcon} alt={t('global.btn-facebook')} /></a>
         ) : (
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/Cocorico-101963548625955" target="_blank" rel="noopener noreferrer">
             <img src={props.setFacebookIcon} alt={t('global.btn-facebook')} /></a>
           )}
       </Box>
