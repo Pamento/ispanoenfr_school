@@ -158,7 +158,6 @@ const Home = () => {
                   <li>{t('home.pedagogical-list2-p6')}</li>
                   <li>{t('home.pedagogical-list2-p7')}</li>
                   <li>{t('home.pedagogical-list2-p8')}</li>
-                  <li>{t('home.pedagogical-list2-p9')}</li>
                 </ul>
                 <br />
                 <h2 className="h2-title" >{t('home.pedagogical-subtitle2')}</h2>

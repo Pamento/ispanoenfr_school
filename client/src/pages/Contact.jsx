@@ -271,6 +271,9 @@ const Contact = () => {
                     <option key="1" value={t('contact.subject.subject-1')} label={t('contact.subject.subject-1')} />
                     <option key="2" value={t('contact.subject.subject-2')} label={t('contact.subject.subject-2')} />
                     <option key="3" value={t('contact.subject.subject-3')} label={t('contact.subject.subject-3')} />
+                    <option key="4" value={t('contact.subject.subject-4')} label={t('contact.subject.subject-4')} />
+                    <option key="5" value={t('contact.subject.subject-5')} label={t('contact.subject.subject-5')} />
+                    <option key="6" value={t('contact.subject.subject-6')} label={t('contact.subject.subject-6')} />
                   </select>
                 </div>
                 <div className="error-msg"></div>

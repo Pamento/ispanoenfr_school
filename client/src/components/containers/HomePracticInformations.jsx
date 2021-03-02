@@ -3,9 +3,8 @@ import "../../index.css";
 import "../../containers.css"
 import { useTranslation } from 'react-i18next'
 import ImageAndText from "../ImageAndText";
-// import div from "../units/BoxColored";
 import PictoAge from "../../assets/icons/picto_age.png";
-import PictoStatistic from "../../assets/icons/picto_statistic.png";
+import PictoStatistic from "../../assets/icons/picto_level.png";
 import PictoCalendar from "../../assets/icons/picto_calendar.png";
 import PictoGeo from "../../assets/icons/picto_geo.png";
 import PictoStudents from "../../assets/icons/picto_students.png";
@@ -34,10 +33,10 @@ export default function HomePracticalInformations() {
           imageDivClass="embed-box-image"
           imgClass="box-picto"
           imageSrc={PictoStatistic}
-          imageDescript={t('home.practical.statistic-picto-alt')}
+          imageDescript={t('home.practical.level-picto-alt')}
           textDiv="box-text"
         >
-          <p className="box-text-p p-size-one-three">{t('home.practical.statistic')}</p>
+          <p className="box-text-p p-size-one-three">{t('home.practical.level')}</p>
         </ImageAndText>
       </div>
       <div className="row-picto container-static">

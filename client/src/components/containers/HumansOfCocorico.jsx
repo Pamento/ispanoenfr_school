@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import Box from "../units/BoxColored";
 import ImageAndText from "../ImageAndText";
-import ManGlass from "../../assets/icons/man_glass.png";
-import Woman from "../../assets/icons/woman.png";
 
 const HumansOfCocorico = () => {
   const { t } = useTranslation();
@@ -68,9 +66,10 @@ const HumansOfCocorico = () => {
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
                 textDiv="box-text"
+                alt={t('about.humans-of.com-human-1-alt')}
               >
                 <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.com-human-1')}</p>
                 </div>
               </ImageAndText>
               <ImageAndText
@@ -78,22 +77,12 @@ const HumansOfCocorico = () => {
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
                 textDiv="box-text"
+                alt={t('about.humans-of.com-human-2-alt')}
               >
                 <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.com-human-2')}</p>
                 </div>
               </ImageAndText>
-              {/* <ImageAndText
-                allClass="box-single-human container-static"
-                imageDivClass="box-human-image"
-                imgClass="box-img"
-                textDiv="box-text"
-                imageSrc={Woman}
-              >
-                <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.communication')}</p>
-                </div>
-              </ImageAndText> */}
             </div>}
         </>
         <>
@@ -102,25 +91,13 @@ const HumansOfCocorico = () => {
               onMouseEnter={keepAcademicHoverIn}
               onMouseLeave={keepAcademicHoverOut}>
               <ImageAndText
+                idUnic="academic-velerie"
                 allClass="box-single-human container-static"
                 imageDivClass="box-human-image"
-                imgClass="box-img"
                 textDiv="box-text"
-                imageSrc={ManGlass}
               >
                 <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
-                </div>
-              </ImageAndText>
-              <ImageAndText
-                allClass="box-single-human container-static"
-                imageDivClass="box-human-image"
-                imgClass="box-img"
-                textDiv="box-text"
-                imageSrc={Woman}
-              >
-                <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of.academic')}</p>
+                  <p className="box-text-p p-size-m">{t('about.humans-of.academ-human-1')}</p>
                 </div>
               </ImageAndText>
             </div>}
@@ -140,17 +117,6 @@ const HumansOfCocorico = () => {
                   <p className="box-text-p p-size-m">{t('about.humans-of.technic-human-1')}</p>
                 </div>
               </ImageAndText>
-              {/* <ImageAndText
-                allClass="box-single-human container-static"
-                imageDivClass="box-human-image"
-                imgClass="box-img"
-                textDiv="box-text"
-                imageSrc={Man}
-              >
-                <div>
-                  <p className="box-text-p p-size-m">{t('about.humans-of')}</p>
-                </div>
-              </ImageAndText> */}
             </div>}
         </>
       </div>

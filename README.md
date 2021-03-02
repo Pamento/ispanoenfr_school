@@ -1,1 +1,1 @@
-React app with express like backend.
+React app with express for backend.

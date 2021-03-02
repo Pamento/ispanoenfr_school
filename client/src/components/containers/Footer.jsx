@@ -35,8 +35,8 @@ const Footer = () => {
         </div>
         <FooterNavigation />
         <div className="footer-legacy">
-          <a className="btn-legacy" href={BASE_URL + "/Imagination.pdf"} target="_blank" rel="noopener noreferrer">{t('footer.btn-privacy')}</a>
-          <a className="btn-legacy" href={BASE_URL + "/Theatre.pdf"} target="_blank" rel="noopener noreferrer">{t('footer.btn-terms')}</a>
+          <a className="btn-legacy" href={BASE_URL + "/privacy_policy.pdf"} target="_blank" rel="noopener noreferrer">{t('footer.btn-privacy')}</a>
+          <a className="btn-legacy" href={BASE_URL + "/terms_use.pdf"} target="_blank" rel="noopener noreferrer">{t('footer.btn-terms')}</a>
         </div>
       </div>
     </div>
