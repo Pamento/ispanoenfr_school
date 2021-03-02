@@ -101,7 +101,7 @@
 
 .card-three {
   transform: rotate(1deg);
-  top: -12%;
+  top: -15%;
   left: 5%;
 }
 
@@ -173,15 +173,16 @@
 
 #op-isabelle_d {
   background-image: url('../assets/media/isabelle_dremeau.jpg');
-
 }
 
 #op-valerie {
   background-image: url('../assets/media/valerie.jpg');
-
 }
 
 #op-christian {
   background-image: url('../assets/media/Christian_Pitter.jpeg');
+}
 
+#op-paula {
+  background-image: url('../assets/media/paula_baxter.jpeg');
 }

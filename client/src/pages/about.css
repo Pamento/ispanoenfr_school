@@ -48,7 +48,7 @@
   border-radius: 50%;
 }
 
-.box-img > img {
+.box-img>img {
   max-width: 150px;
   max-height: 150px;
   width: auto;
@@ -64,22 +64,16 @@
 
 #pawel {
   background-image: url('../assets/media/pawel.jpeg');
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; */
 }
+
 #soline {
   background-image: url('../assets/media/soline.jpg');
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; */
 }
+
 #erwan {
   background-image: url('../assets/media/erwan.jpg');
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; */
+}
+
+#academic-velerie {
+  background-image: url('../assets/media/union-force.jpg');
 }
