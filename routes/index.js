@@ -28,6 +28,9 @@ router.get('/thum-x-Hr-07etalpmehtuizxOnE', function (req, res, next) {
   
 });
 
-router.get('/:file', sendPDF.sendPDF)
+router.get('/:file', function(req,res){
+  console.log(req);
+});
+// router.get('/:file', sendPDF.sendPDF);
 
 module.exports = router;
