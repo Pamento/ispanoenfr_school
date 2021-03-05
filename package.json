@@ -5,7 +5,7 @@
   "scripts": {
     "preinstall": "cd client/ && npm install && cd .. npm install",
     "postinstall": "NODE_ENV=production && cd client/ && yarn build && cd ..",
-    "start": "PORT=3133 node ./bin/www"
+    "start": "PORT=3133 pm2 start ./bin/www --watch --ignore-watch='node_modules' --update-env"
   },
   "engines": {
     "node": "14.15.4",

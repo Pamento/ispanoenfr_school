@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://localhost:3133';
+export const BASE_URL = 'https://cocorico-workshop.com/';
