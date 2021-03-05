@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const sendPDF = require('../controllers/public-files');
+const winston = require('../config/winston');
 
 /* GET hello word express/jade page. */
 router.get('/', function (req, res, next) {
@@ -21,13 +22,12 @@ router.get('/thum-x-Hr-07etalpmehtuizxOnE', function (req, res, next) {
 
   try {
     res.render('temp-msg', {tento:tentos});
-  } catch (error) {
-    // send 404 page
+  } catch (e) {
+    winston.error(e)
     res.status(400);
   }
-  
 });
 
-router.get('/:file', sendPDF.sendPDF)
+router.get('/:file', sendPDF.sendPDF);
 
 module.exports = router;

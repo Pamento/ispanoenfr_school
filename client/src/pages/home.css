@@ -15,10 +15,18 @@
 
 .home-box-descr {
   padding-bottom: var(--size-double);
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .home-box-descr > p {
   margin: .2em;
+}
+
+.home-box-descr > ul {
+  font-size: 1.5em;
+  text-align: left;
 }
 
 .box-contect-image > img {

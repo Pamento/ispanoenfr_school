@@ -25,6 +25,7 @@ import InstagramCoral from "../assets/icons/insta_coral.png";
 import FacebookNavy from "../assets/icons/face_navy.png";
 import FacebookCoral from "../assets/icons/face_coral.png";
 import WomanGlass from "../assets/icons/woman_glass.png";
+import Woman from "../assets/icons/woman.png";
 // audio
 import VoicePlayer from "../components/units/FrenchVoicePlayer";
 
@@ -223,9 +224,9 @@ const TestimonyAndGallery = () => {
             </div>
             <div className="testimony-container-relative">
               <ImageAndText
-                idBoxImg="op-valerie"
                 allClass="row testimony-card testimony-card-pinkLight card-fifth"
                 imgClass="op-testymony-image testimony-image"
+                imageSrc={Woman}
                 textDiv="box-text"
               >
                 <p className="testimony-text-p p-size-one-three">
@@ -280,13 +281,10 @@ const TestimonyAndGallery = () => {
           <div className="container-static">
             <MultiColorBoxRow boxsRowClass='five-color-row' dataToDisplay={[
               ['box-testimony-link box-blueLight',
-                'https://www.facebook.com/',
+                'https://www.facebook.com/Cocorico-101963548625955/photos',
                 t(`testimony-gallery.pictures`)],
-              ['box-testimony-link box-pink',
-                'https://www.facebook.com/',
-                t(`testimony-gallery.videos`)],
               ['box-testimony-link box-yellow',
-                'https://www.facebook.com/',
+                'https://www.facebook.com/Cocorico-101963548625955 ',
                 t(`testimony-gallery.articles`)]
             ]} />
           </div>

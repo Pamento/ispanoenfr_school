@@ -73,7 +73,6 @@ const Contact = () => {
     },
     validate,
     onSubmit: values => {
-      console.info('submited times:' + formik.submitCount)
       if (formik.values.lName !== '' && formik.values.email !== '' && formik.values.msg !== '' && formik.isValid && formik.submitCount < 6) {
         allowSubmit('0');
         sendMessage(JSON.stringify(values));
@@ -85,14 +84,12 @@ const Contact = () => {
     },
   });
   const sendMessage = values => {
-    const url = BASE_URL + "/contact/message";
-    const xhr = getHttpRequest();
-    console.log(xhr);
+    const url = BASE_URL + "/contact/message",
+    xhr = getHttpRequest();
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          console.log('status Response: ' + xhr.status);
           setMsgSend(true);
           formik.resetForm({});
           formik.setStatus({ success: true });
@@ -113,8 +110,6 @@ const Contact = () => {
       window.scrollTo(0, 0);
       setLoaded(window.location.hash);
     }
-    console.log('-#- ' + isSubmitting);
-    console.error(formik.errors);
     if (formik.submitCount > 5) {
       allowSubmit('-1')
     } else {
@@ -274,6 +269,7 @@ const Contact = () => {
                     <option key="4" value={t('contact.subject.subject-4')} label={t('contact.subject.subject-4')} />
                     <option key="5" value={t('contact.subject.subject-5')} label={t('contact.subject.subject-5')} />
                     <option key="6" value={t('contact.subject.subject-6')} label={t('contact.subject.subject-6')} />
+                    <option key="6" value={t('contact.subject.subject-7')} label={t('contact.subject.subject-7')} />
                   </select>
                 </div>
                 <div className="error-msg"></div>

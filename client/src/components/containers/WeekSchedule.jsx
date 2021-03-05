@@ -13,14 +13,14 @@ export default function WeekSchedule() {
         title={t('home.typical.day-5-1')}
         message1={t('home.typical.day-5-1-description-p1')}
         spanBold={sBold}
-        message2={t('home.typical.day-1-description-p2')}
+        message2={t('home.typical.day-5-1-description-p2')}
         color="pink"
       />
       <DAY
         title={t('home.typical.day-5-2')}
         message1={t('home.typical.day-5-2-description-p1')}
         spanBold={sBold}
-        message2={t('home.typical.day-2-description-p2')}
+        message2={t('home.typical.day-5-2-description-p2')}
         color="pinkLight"
       />
       <DAY
