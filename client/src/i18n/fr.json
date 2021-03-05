@@ -103,9 +103,7 @@
       "equipment": "A définir.",
       "ressource-picto-alt": "",
       "ressource": "Pas de devoirs. Matériel pourvu."
-    },
-    "privacy": "Politique de confidentialité",
-    "legacy": "Conditions d'utilisation"
+    }
   },
   "about": {
     "main-img-alt": "Enfant+théâtre+jeux+camp de vacances+surprise+langues+COCORICO",
@@ -255,30 +253,10 @@
     "answer5-p1": "Le spectacle est présenté par tous les participants à l'atelier qui se tient le dernier jour de l'atelier. C’est l'occasion pour eux de présenter leurs nouveaux apprentissages devant leurs parents, ainsi qu'une liste d'invités dont le nombre dépend de la salle et de la direction de l'école. Quelques billets de spectacle leur seront remis.",
     "answer5-p2": "Le spectacle est présenté en français mais différentes stratégies de mise en scène aident le public à comprendre son contenu.",
     "answer5-p3": "Le public est invité à participer en s'exprimant dans sa langue maternelle, en anglais ou en français, sur certains faits culturels et historiques, contribuant ainsi à l'atmosphère agréable et joyeuse.",
-    "answer5-p4": "A l'issue de la représentation (uniquement pour les ateliers de 5 jours), le public et les participants de l’atelier sont invités à partager un «Apéro», un apéritif français traditionnel et convivial proposé par notre sponsor. Il s’agit d’un moment rafraîchissant et gourmand pour clôturer cet atelier en langue française pleine de découvertes et d'inspiration.",
-    "question6": "Question 6",
-    "answer6": "Réponse 6 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question7": "Question 7",
-    "answer7": "Réponse 7 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question8": "Question 8",
-    "answer8": "Réponse 8 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question9": "Question 9",
-    "answer9": "Réponse 9 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question10": "Question 10",
-    "answer10": "Réponse 10 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question11": "Question 11",
-    "answer11": "Réponse 11 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question12": "Question 12",
-    "answer12": "Réponse 12 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question13": "Question 13",
-    "answer13": "Réponse 13 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question14": "Question 14",
-    "answer14": "Réponse 14 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question15": "Question 15",
-    "answer15": "Réponse 15 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ..."
+    "answer5-p4": "A l'issue de la représentation (uniquement pour les ateliers de 5 jours), le public et les participants de l’atelier sont invités à partager un «Apéro», un apéritif français traditionnel et convivial proposé par notre sponsor. Il s’agit d’un moment rafraîchissant et gourmand pour clôturer cet atelier en langue française pleine de découvertes et d'inspiration."
   },
   "contact": {
-    "msg": "Bonjour, je serais ravi de discuter avec vous de collaborations potentielles, de partager des idées et de répondre à toutes vos demandes. Alors n'hésitez pas à me contacter!",
+    "msg": "Bonjour, je serais ravie de discuter avec vous de collaborations potentielles, de partager des idées et de répondre à toutes vos demandes. Alors n'hésitez pas à me contacter!",
     "who-are-you": {
       "hint": "Vous êtes ?",
       "type-1": "Un membre du conseil d’administration",
@@ -291,7 +269,7 @@
     },
     "your-title": {
       "hint": "Quel est votre titre ?",
-      "title-1": "Mm.",
+      "title-1": "Mme.",
       "title-2": "M.",
       "title-3": "Autre"
     },

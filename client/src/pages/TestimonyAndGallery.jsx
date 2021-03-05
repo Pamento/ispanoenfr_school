@@ -281,13 +281,10 @@ const TestimonyAndGallery = () => {
           <div className="container-static">
             <MultiColorBoxRow boxsRowClass='five-color-row' dataToDisplay={[
               ['box-testimony-link box-blueLight',
-                'https://www.facebook.com/Cocorico-101963548625955',
+                'https://www.facebook.com/Cocorico-101963548625955/photos',
                 t(`testimony-gallery.pictures`)],
-              ['box-testimony-link box-pink',
-                'https://www.facebook.com/Cocorico-101963548625955',
-                t(`testimony-gallery.videos`)],
               ['box-testimony-link box-yellow',
-                'https://www.facebook.com/Cocorico-101963548625955',
+                'https://www.facebook.com/Cocorico-101963548625955 ',
                 t(`testimony-gallery.articles`)]
             ]} />
           </div>

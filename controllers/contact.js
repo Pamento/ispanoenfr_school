@@ -6,11 +6,8 @@ require("dotenv").config();
 
 exports.sendEmail = (req, res) => {
   try {
-
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
-
       res.status(400);
-
     } else {
       try {
         let tentos = {};
@@ -25,31 +22,17 @@ exports.sendEmail = (req, res) => {
           tentos.msg = req.body.msg === '' ? ' ...' : req.body.msg === 'string' ? req.body.msg : JSON.stringify(req.body.msg);
           setHtml(tentos);
         }
-
         function setHtml(tentos) {
           fs.readFile(path.resolve(__dirname, '../views/temp-msg.jade'), 'utf8', function (err, data) {
-            console.log('test__2::');
             if (err) {
-              console.error('ERROR_ __XXX')
               winston.error(err);
               return;
             }
-            console.log('data::');
-            console.log(data);
-            console.log("**************************************************************************");
-            console.log('tentos');
-            console.log(tentos);
             let fn = jade.compile(data);
             html = fn({ tento: tentos });
-            console.log('html::');
-            console.log(html);
-            console.log('__________________________________________________________________________')
             sendTheEmail(html)
           });
         }
-
-
-
         function sendTheEmail(html) {
           const mailjet = require('node-mailjet')
             .connect(process.env.MJ_APIKEY_PUBLIC, process.env.MJ_APIKEY_PRIVATE)
@@ -77,32 +60,18 @@ exports.sendEmail = (req, res) => {
             })
           request
             .then((result) => {
-              console.log('send mail');
-              console.log(result.body);
-
               res.setHeader('Content-Type', 'application/json');
               res.end(JSON.stringify({ "success": "OK" }));
             })
             .catch((e) => {
-              console.error('error send mail')
-              console.log(err.statusCode)
               winston.error(e);
               return;
             })
         }
-
-
-
       } catch (e) {
         winston.error(e);
       }
-
-      console.dir(req.body);
-      console.dir(Object.keys(req.body).length);
-      console.dir(tentos);
-
     }
-
   } catch (e) {
     winston.error(e)
   }

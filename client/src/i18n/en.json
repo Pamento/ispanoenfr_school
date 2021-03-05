@@ -103,9 +103,7 @@
       "equipment": "To be discussed",
       "ressource-picto-alt": "",
       "ressource": "No homeworks. School supplies provided."
-    },
-    "privacy": "Privacy Policy",
-    "legacy": "Terms of Use"
+    }
   },
   "about": {
     "main-img-alt": "Children+drama+games+camps+languages+COCORICO",
@@ -114,7 +112,6 @@
     "valerie-about1": "I’m Valérie, I was born in France and I have been living across the world. I am passionate about traveling, reading, cooking and discovering new things. ",
     "valerie-about2": "Having graduated with honors, and with a Master in Cultural Management and a Master in French as a foreign language, my working journey has been thrilling, fruitful and inspiring. Juggling my passion for performing and visuals arts, and teaching for more than 15 years, I have offered my services in various institutions such as festivals, museums and international schools in France and abroad.",
     "valerie-about3": "I have always been enthusiastic about igniting children's curiosity and joy of learning French language through drama and creative expression activities.",
-    "valerie-about-link": "Have a look at my curriculum vitae!",
     "humans-of": {
       "subtitle": "HUMANS OF COCORICO",
       "communication": "COMMUNICATION SUPPORT",
@@ -256,27 +253,7 @@
     "answer5-p1": "The performance is a show performed by all of the workshop participants held on the last day of the workshop. It is a chance for them to present their new knowledge and improvements in front of their parents, as well as a list of guests whose number depends on the room and the school direction. A few performance tickets will be offered to them.",
     "answer5-p2": "The show is given in French but different strategies of the staging will help the audience to understand what is happening during the performance.",
     "answer5-p3": "The audience is invited to participate by expressing themselves in their mother tongue, in English or in French, about some cultural and historical facts, which contribute to the pleasant and joyful atmosphere.",
-    "answer5-p4": "At the end of the performance (only for the 5 days workshop), the whole audience and the performers are invited to share an « Apero », a traditional and convivial French aperitif offered by our sponsor. A refreshing and flavored moment to end this French week full of discovery and inspiration.",
-    "question6": "Question 6",
-    "answer6": "Answer 6 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question7": "Question 7",
-    "answer7": "Answer 7 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question8": "Question 8",
-    "answer8": "Answer 8 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question9": "Question 9",
-    "answer9": "Answer 9 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question10": "Question 10",
-    "answer10": "Answer 10 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question11": "Question 11",
-    "answer11": "Answer 11 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question12": "Question 12",
-    "answer12": "Answer 12 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question13": "Question 13",
-    "answer13": "Answer 13 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question14": "Question 14",
-    "answer14": "Answer 14 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
-    "question15": "Question 15",
-    "answer15": "Answer 15 : Lorem ipsum dolor sit amet, consecutetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ..."
+    "answer5-p4": "At the end of the performance (only for the 5 days workshop), the whole audience and the performers are invited to share an « Apero », a traditional and convivial French aperitif offered by our sponsor. A refreshing and flavored moment to end this French week full of discovery and inspiration."
   },
   "contact": {
     "msg": "Hey, I would be delighted to discuss with you about potential collaborations, share ideas and answer all your requests. So don't hesitate to contact me!",
