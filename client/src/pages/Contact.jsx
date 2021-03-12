@@ -3,6 +3,7 @@ import './contact.css';
 import { useTranslation } from 'react-i18next';
 import { useFormik } from 'formik';
 import { BASE_URL } from "../constants/basic";
+import Recaptcha from 'react-gcaptcha';
 
 const getHttpRequest = function () {
   var httpRequest = false;
@@ -61,6 +62,7 @@ const Contact = () => {
   const [firstNameError, setFirstNameError] = useState('');
   const [msgIsSend, setMsgSend] = useState(false);
   const [sentError, setSentError] = useState(false);
+  const [isHuman, verifHuman] = useState(false);
   const formik = useFormik({
     initialValues: {
       status: '',
@@ -85,7 +87,7 @@ const Contact = () => {
   });
   const sendMessage = values => {
     const url = BASE_URL + "/contact/message",
-    xhr = getHttpRequest();
+      xhr = getHttpRequest();
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
@@ -113,7 +115,7 @@ const Contact = () => {
     if (formik.submitCount > 5) {
       allowSubmit('-1')
     } else {
-      if (formik.values.lName !== '' && formik.values.email !== '' && formik.values.msg !== '' && formik.isValid) {
+      if (formik.values.lName !== '' && formik.values.email !== '' && formik.values.msg !== '' && formik.isValid && isHuman) {
         allowSubmit('0');
       } else if ((formik.errors.lName === '4' || formik.errors.email || formik.errors.msg) && formik.errors.email !== 'r' && formik.errors.msg !== 'r') {
         allowSubmit('2');
@@ -126,7 +128,7 @@ const Contact = () => {
       }
     }
 
-  }, [loaded, isSubmitting, allowSubmit, formik.values.lName, formik.values.email, formik.values.msg,
+  }, [loaded, isHuman, isSubmitting, allowSubmit, formik.values.lName, formik.values.email, formik.values.msg,
     formik.errors.lName, formik.errors.email, formik.errors.msg, formik.isValid, formik.submitCount, formik.errors]);
 
   const iChange = (e) => {
@@ -163,6 +165,10 @@ const Contact = () => {
       default:
         break;
     }
+  }
+
+  const vReCaptcha = (key) => {
+    verifHuman(true);
   }
 
   return (
@@ -286,9 +292,10 @@ const Contact = () => {
                 </div>
                 {formik.touched.msg && formik.errors.msg ? displayErrorMessage(formik.errors.msg) : <div className="error-msg"></div>}
                 <div className="check-and-submit">
-                  <button className="btn-contact-submit-hidden" type="button" value={2617503}>
-                    {formik.errors.lName}
-                  </button>
+                  <Recaptcha
+                    sitekey='6LfFZ3waAAAAAE1ZwzhZn9JWoGP2k8n8IBBKcPb6'
+                    verifyCallback={vReCaptcha}
+                  />
                   {isSubmitting === '-1' && <button className="btn-contact-submit-disabled" type="submit" aria-disabled={true} disabled>
                     {t('contact.errors.reset-form')}
                   </button>}

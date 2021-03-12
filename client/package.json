@@ -13,6 +13,7 @@
     "react": "^17.0.1",
     "react-confirm-alert": "^2.7.0",
     "react-dom": "^17.0.1",
+    "react-gcaptcha": "^4.3.0",
     "react-i18next": "^11.8.5",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
