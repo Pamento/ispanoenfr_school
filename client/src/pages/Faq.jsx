@@ -19,7 +19,7 @@ import { BASE_URL } from "../constants/basic";
 
 const Faq = () => {
   const { t } = useTranslation();
-  const [accordion, setAccordion] = useState([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
+  const [accordion, setAccordion] = useState(Array(5).fill(false));
   const [loaded, setLoaded] = useState('');
 
 

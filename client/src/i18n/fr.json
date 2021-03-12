@@ -1,8 +1,12 @@
 {
   "global": {
-    "btn-chose-lang": "choisir la langue: en premier c’est l'anglais et le deuxième c’est le français",
+    "btn-chose-lang": "choisir la langue: en premier c’est l'anglais, le deuxième c’est le français, le troisième c'est l'espagnol, le quatrième c'est le russe, le cinquième c'est l'allemand, le sixi l'italien",
     "btn-en": "choisir la langue anglaise",
     "btn-fr": "choisir la langue française",
+    "btn-es": "choisir la langue espagnole",
+    "btn-ru": "choisir la langue russe",
+    "btn-de": "choisir la langue allemande",
+    "btn-it": "choisir la langue italienne",
     "btn-insta": "bouton pour aller sur instagram COCORICO-WORKSHOP",
     "btn-facebook": "bouton pour aller sur facebook COCORICO-WORKSHOP",
     "btn-audio": "Enregistrements audios des enfants parlant français",

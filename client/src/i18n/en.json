@@ -1,8 +1,12 @@
 {
   "global": {
-    "btn-chose-lang": "choice of the language: first is English, second is French",
+    "btn-chose-lang": "choice of the language: first is English, second is French, third in Spanish, fourth in Russian, fifth in German, sixth in Italian",
     "btn-en": "choose English language",
     "btn-fr": "choose French language",
+    "btn-es": "choose Spanish language",
+    "btn-ru": "choose Russian language",
+    "btn-de": "choose German language",
+    "btn-it": "choose Italian langauge",
     "btn-insta": "go to instagram COCORICO-WORKSHOP",
     "btn-facebook": "go to facebook COCORICO-WORKSHOP",
     "btn-audio": "play audio with children's voice which speak french",

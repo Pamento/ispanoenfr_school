@@ -15,7 +15,7 @@ import ImgBanderoleS from "../assets/media/b_educational_s.png";
 
 const EducationalResources = () => {
   const { t } = useTranslation();
-  const [educAccordion, updateAccordion] = useState([false, false, false, false]);
+  const [educAccordion, updateAccordion] = useState(Array(4).fill(false));
   const [loaded, setLoaded] = useState('');
   const
     vocabularyRef = useRef(null),
