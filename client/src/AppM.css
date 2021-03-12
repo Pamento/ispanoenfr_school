@@ -275,8 +275,11 @@
   }
 
   .check-and-submit {
-    justify-content: initial !important;
-    flex-direction: column-reverse !important;
+    display: block !important;
+  }
+
+  .check-and-submit > div {
+    margin-bottom: 2.5em !important;
   }
 
   .btn-contact-submit-not-allowed,
