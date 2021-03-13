@@ -15,6 +15,7 @@ const contactRouter = require('./routes/contact');
 const clientApp = require('./routes/spa');
 
 const app = express();
+const orList = ['http://cocorico-workshop.com','https://cocorico-workshop.com','http://localhost:3133','https://cocorico-workshop.herokuapp.com'];
 
 
 app.use(compression());
@@ -25,12 +26,20 @@ app.set('view engine', 'jade');
 // prevent default favicon of Express
 app.use(ignoreFavicon);
 app.disable('x-powered-by')
-app.use(cors());
-// app.use((req,res,next) => {
-//   res.setHeader('Access-Control-Allow-Origin','http://localhost:3000/');
-//   res.setHeader('Access-Control-Allow-Methods','POST','GET');
-//   res.setHeader('Access-Control-Request-Headers', 'Content-Type');
-// })
+app.use(cors({
+  origin: function(o, callback){
+    // allow requests with no origin 
+    // (like mobile apps or curl requests)
+    if(!o) return callback(null, true);
+    if(orList.indexOf(o) === -1){
+      var msg = 'The CORS policy for this site does not ' +
+                'allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  methods: "GET,POST",
+}));
 app.use(morgan('combined', { stream: winston.stream }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

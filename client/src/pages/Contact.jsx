@@ -167,6 +167,12 @@ const Contact = () => {
     }
   }
 
+  const recaptchaLoaded = () => {
+    verifHuman(false);
+  }
+
+  window.recaptchaLoaded = recaptchaLoaded;
+
   const vReCaptcha = (key) => {
     verifHuman(true);
   }
