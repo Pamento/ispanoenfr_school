@@ -17,6 +17,10 @@ const Header = () => {
         setLang(Language.EN);
         i18n.changeLanguage(Language.EN);
         break;
+      case Language.RU:
+        setLang(Language.RU);
+        i18n.changeLanguage(Language.RU);
+        break;
       case Language.FR:
       default:
         setLang(Language.FR);

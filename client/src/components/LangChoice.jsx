@@ -6,6 +6,7 @@ import IconLanguage from "../assets/icons/picto_langues.png";
 import IconLanguageCoral from "../assets/icons/picto_langues_coral.png";
 import { ReactComponent as IconFlagFr } from "../assets/icons/fr.svg";
 import { ReactComponent as IconFlagGb } from "../assets/icons/gb.svg";
+import { ReactComponent as IconFlagRu } from "../assets/icons/ru.svg";
 
 
 const LangChoice = (props) => {
@@ -38,6 +39,12 @@ const LangChoice = (props) => {
             handleOnClick={props.setLanguage}
           >
             <IconFlagFr alt={t('global.btn-fr')} />
+          </ItemLangBtn>
+          <ItemLangBtn btnClass=" btn-lang icon-size"
+            eventValue="ru"
+            handleOnClick={props.setLanguage}
+          >
+            <IconFlagRu alt={t('global.btn-ru')} />
           </ItemLangBtn>
         </div>
       ) : (

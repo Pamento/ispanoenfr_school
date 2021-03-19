@@ -1,4 +1,5 @@
 export const Language = {
   FR: "fr",
-  EN: "en"
+  EN: "en",
+  RU: "ru"
 }
